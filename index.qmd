@@ -1,11 +1,29 @@
 ---
-title: "erikdeluca.github.io"
+# title: "Erik De Luca"
+image: media/foto_profilo_abito.jpg
+2toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/erikdeluca/
+      target: _blank
+    - text: GitHub
+      icon: github
+      href: https://github.com/erikdeluca
+      target: _blank
+    - text: Email
+      icon: envelope
+      href: mailto:erikdeluca@gmail.com
+      target: _blank
+    - text: Resume
+      icon: file-pdf
+      href: media/CV_ENG_Actuary_DS_11_24.pdf
+      target: _blank
 ---
 
-This is a Quarto website.
+Hello! I’m Erik De Luca, an actuary with a passion for data science, always seeking new ways to transform complex numbers and data into comprehensible stories and practical solutions. With a background in statistics and actuarial techniques, I have a keen interest in quantitative finance and portfolio optimization. When not immersed in numbers, I indulge in travel, craft beer brewing, and judo. Welcome to my corner of the web!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
