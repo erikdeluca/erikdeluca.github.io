@@ -4,7 +4,7 @@ description: |
   International competition for the best portfolio for a fund plan. My aim was to find the best weights that could be used by a pension fund. The portfolio is composed by REITS, Commodities, CAT BOND, Dividends, Short term bonds, Cash and Inflation linked.
 author: Erik De Luca
 date: "2023-10-15"
-categories: [Finance]
+categories: [Finance, Portfolio, R, Quantmod, Highcharter, PerformanceAnalytics, Tidyverse, Data.Table, DEoptim, Timetk, Plotly, YahooFinancer, RColorBrewer, GT]
 image: logo_MIPC_Asset_Allocator.png
 draft: false
 ---
@@ -55,12 +55,11 @@ detailPortfolio =
       "KO",
       "NVS",
       "NVDA", # nvidia no dividendi
-      # "SHY",  # short term bond -- in verità sono etf che riproducono l'andamento
+      # "SHY",  # short term bond -- in truth they are etfs that reproduce the trend
       # "VGSH",
       "SPTS",
       "IBGS.AS",
-      "6C=F",      # cash -- ho messo un future sui dollari canadesi per rappresentare la liquidità
-      # "XT2D.L",  # swap  -- non sapevo cosa mettere
+      "6C=F",      # cash -- I placed a Canadian dollar future to represent liquidity
       "XGIU.MI"     # Inflation linked
     ),
     category = c(
@@ -317,7 +316,7 @@ tibble("Return" = port_returns,
 A simulation will be carried out using the MonteCarlo method where the experiment will be repeated by randomly extracting the weights, thus finding the best portfolio combination.
 In this case, the experiment will be repeated 5000 times but the portfolio weights will not be completely random, they will vary around the values we preset.
 
-```{r}
+```{r Montecarlo}
 set.seed(1)
 num_port = 5000
 
@@ -380,7 +379,7 @@ for (i in seq_along(port_returns)) {
 
 The weights assigned by the portfolio with the highest *sharpe ratio* are shown in the interactive plot below.
 
-```{r, warning=FALSE}
+```{r portfolio weights, warning=FALSE}
 # Storing the values in the table
 portfolio_values = tibble(Return = port_returns,
                   Risk = port_risk,
@@ -441,7 +440,7 @@ ggplotly(p)
 
 The graph below shows the values of the portfolios created during the optimisation process. The red dot represents the portfolio with the highest *sharpe ratio*.
 
-```{r}
+```{r efficient fronter}
 p = portfolio_values %>%
   ggplot(aes(x = Risk, y = Return, color = SharpeRatio)) +
   geom_point() +

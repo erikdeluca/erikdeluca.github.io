@@ -40,4 +40,5 @@ format:
     dark: solar
     toc: true
     page-layout: full
-    code_folding: hide
+    code-fold: true
+    df-print: paged
