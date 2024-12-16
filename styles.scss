@@ -1,0 +1,266 @@
+/*-- scss:defaults --*/
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Parkinsans:wght@300..800&display=swap');
+// set the font variables
+$figtree: 'Figtree', sans-serif; 
+$parkinsans: 'Parkinsans', sans-serif; 
+
+// Taken from https://github.com/samanthacsik/samanthacsik.github.io/blob/main/styles.scss
+// Colorsx  
+$timberwolf: #d5d3d4ff;
+$silver: #b5b1b2ff;
+$rose-quartz: #ada9b7ff;
+$white-smoke: #f5f5f5ff;
+$periwinkle: #a9afd1ff;
+$cool-gray: #7c809bff;
+$lapis-lazuli: #41618bff;
+$light-sky-blue: #a1cdf4ff;
+
+
+// Base document colors
+$navbar-bg: $silver;//$white-smoke;
+$navbar-fg: $rose-quartz; 
+$navbar-hl: $light-sky-blue;//$orange;//$purple; 
+$body-bg: $timberwolf;
+$body-color: $cool-gray;
+$footer-bg: $silver; 
+$link-color: $light-sky-blue;// $orange;//$purple;
+
+// Inline code
+$code-bg: $white-smoke;
+$code-color: $lapis-lazuli;//$burnt-orange; 
+
+// Code blocks
+$code-block-bg: $white-smoke;
+
+/*-- scss:rules --*/
+
+/* ELEMENT SELECTORS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $parkinsans; 
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: $cool-gray;
+}
+
+body {
+  font-family: $figtree;
+  line-height: 1.5; // min 1.5 suggested for assistive tech
+  font-size: 19.5px;
+  font-weight: 375;//350;
+}
+
+// modify blockquote styling
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0.625rem 1.25rem;
+  border-left: 0.25rem solid $white-smoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ID selectors */
+
+// responsive-ish iframes (width adjusts to viewport size; couldn't figure out how to expand viewport height, so set to this size for now)
+#map-size {
+  width: 100%;
+  height: 350px;
+}
+
+
+// landing page text
+#bio {
+  font-size: 1.1em;
+}
+
+// landing page icon size
+#landing-icons {
+  font-size: 1.4em;
+}
+
+// banner titles (these turned dark green after updating to Quarto v1.5.56, so forcing them to be gray again with this rule)
+.quarto-title-banner h1 {
+  color: $cool-gray;
+}
+
+// figure caption text styling
+.figure-caption {
+  color: $cool-gray;
+  font-style: italic;
+}
+
+// blockquote text styling
+.blockquote {
+  color: $periwinkle;
+}
+
+// larger text
+.large-text {
+  font-size: 25px;
+}
+
+// slightly smaller than default text
+.small-text {
+  font-size: 17px;
+}
+
+// smallest text
+.extra-small-text {
+  font-size: 14px;  
+}
+
+// extra space above line of text (but not as much as <br>)
+.topbr {
+    display: block;
+    margin-top: 1em;
+}
+
+// center align text
+.center-text {
+  text-align: center;
+  left: 50%;
+}
+
+// right-align text
+.right-align-text {
+  text-align: right;
+}
+
+// dark gray text
+.periwinkle-text {
+  color: $periwinkle;
+}
+
+// gray-italic text (mostly used for captions)
+.gray-italic {
+  color: $cool-gray;
+  font-style: italic;
+  font-size: 17px;
+}
+
+// gray background; was .quote-text-bg
+.rose-quartz-bg {
+  background-color: rgba(152, 160, 141, 0.3); //rgba(166, 164, 161, 0.4);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 8px;
+  border-radius: 15px;
+}
+
+// btn styling
+.btn {
+  color: $periwinkle;
+  background-color: $white-smoke; //$light-sage-green;
+  border-color: $periwinkle;
+}
+
+// button hover styling
+.btn:hover {
+  color: $white-smoke;
+  background-color: $light-sky-blue;//$orange;//$purple;
+  border-color: $periwinkle;
+}
+
+// image styling
+.img-styling {
+  border-radius: 2%;
+  border: 2px solid $cool-gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ //width: 80%;
+}
+
+// center image only
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CLASS SELECTORS (copied from inspecting site -- Quarto defined?) */
+
+// resize logo (top left corner) see https://github.com/robertmitchellv/robertmitchellv.github.io/blob/main/custom-dark.scss
+.navbar-brand img { 
+  max-height: 55px;
+  width: auto;
+}
+
+// headshot shape
+.rounded { 
+    border-radius: 50px 20px 50px 20px !important;
+}
+
+// button text size (landing page)
+.about-link-text { 
+  font-size: 18px;
+}
+
+// button icon size (landing page)
+.bi { 
+  font-size: 18px;
+}
+
+// dropdown navbar text color
+.dropdown-item {
+  color: $silver;
+  background-color: $white-smoke;
+}
+
+// listing card styling
+.card {
+  background-color: $white-smoke;
+  //border-radius: 5.25em;
+}
+
+.callout.callout-style-default .callout-body {
+  background-color: $white-smoke;
+}
+
+// listing description text styling
+.description {
+  font-size: 25px;
+}
+
+// about page link button colors 
+div.quarto-about-jolla .about-link {
+  color: $rose-quartz;
+}
+
+// animate logo (rises on hover; HT Briana Barajas :) https://github.com/briana-barajas/briana-barajas.github.io/blob/main/styles.scss )
+.navbar-logo {
+  transition: all 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-4px);
+}
+
+// responisve embedded slides (thanks Casey O'Hara; see https://github.com/nceas-learning-hub/coreR_test/blob/main/lh-style.css)
+.slide-deck{
+  border: 3px solid #dee2e6;
+    border-top-color: rgb(222, 226, 230);
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-right-color: rgb(222, 226, 230);
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-bottom-color: rgb(222, 226, 230);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-left-color: rgb(222, 226, 230);
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+  width: 70%;
+  height: 475px;
+}
