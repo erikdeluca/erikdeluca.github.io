@@ -5,7 +5,7 @@ listing:
   contents: projects
   feed: true
   sort: "date desc"
-  type: default
+  type: grid
   max-description-length: 175
   date-format: medium
   #categories: numbered

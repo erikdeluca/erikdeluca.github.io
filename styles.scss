@@ -15,7 +15,7 @@ $white-smoke: #f5f5f50f;
 $periwinkle: #a9afd13f;
 $cool-gray: #7c809b1f;
 $lapis-lazuli: #41618bff;
-$light-sky-blue: #5fb9ffef;
+$light-sky-blue: #5fa9ffef;
 
 
 // Base document colors
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $parkinsans; 
   letter-spacing: 1px;
   font-weight: 700;
-  color: $cool-gray;
+  color: #7c809b1f;
 }
 
 body {
@@ -56,7 +56,7 @@ body {
 blockquote {
   margin: 0 0 1rem;
   padding: 0.625rem 1.25rem;
-  border-left: 0.25rem solid $white-smoke;
+  border-left: 0.25rem solid #f5f5f50f;
 }
 
 a {
@@ -84,18 +84,18 @@ a {
 
 // banner titles (these turned dark green after updating to Quarto v1.5.56, so forcing them to be gray again with this rule)
 .quarto-title-banner h1 {
-  color: $cool-gray;
+  color: #7c809b1f;
 }
 
 // figure caption text styling
 .figure-caption {
-  color: $cool-gray;
+  color: #7c809b1f;
   font-style: italic;
 }
 
 // blockquote text styling
 .blockquote {
-  color: $periwinkle;
+  color: #a9afd13f;
 }
 
 // larger text
@@ -132,12 +132,12 @@ a {
 
 // dark gray text
 .periwinkle-text {
-  color: $periwinkle;
+  color: #a9afd13f;
 }
 
 // gray-italic text (mostly used for captions)
 .gray-italic {
-  color: $cool-gray;
+  color: #7c809b1f;
   font-style: italic;
   font-size: 17px;
 }
@@ -154,22 +154,22 @@ a {
 
 // btn styling
 .btn {
-  color: $periwinkle;
-  background-color: $white-smoke; //$light-sage-green;
-  border-color: $periwinkle;
+  color: #a9afd13f;
+  background-color: #f5f5f5ff; //$light-sage-green;
+  border-color: #a9afd13f;
 }
 
 // button hover styling
 .btn:hover {
-  color: $white-smoke;
+  color: #f5f5f50f;
   background-color: $light-sky-blue;//$orange;//$purple;
-  border-color: $periwinkle;
+  border-color: #a9afd13f;
 }
 
 // image styling
 .img-styling {
   border-radius: 2%;
-  border: 2px solid $cool-gray;
+  border: 2px solid #7c809b1f;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -208,7 +208,7 @@ a {
 
 // dropdown navbar text color
 .dropdown-item {
-  color: $silver;
+  color: #b5b1b2ff;
   background-color: $white-smoke;
 }
 
@@ -229,7 +229,7 @@ a {
 
 // about page link button colors 
 div.quarto-about-jolla .about-link {
-  color: $rose-quartz;
+  color: #ada9b72f;
 }
 
 // animate logo (rises on hover; HT Briana Barajas :) https://github.com/briana-barajas/briana-barajas.github.io/blob/main/styles.scss )

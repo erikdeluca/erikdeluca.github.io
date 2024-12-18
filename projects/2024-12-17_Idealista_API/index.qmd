@@ -3,7 +3,7 @@ title: "Idealista: case in vendita a Malaga"
 author: Erik De Luca
 date: "2024-12-17"
 categories: [API, Real Estate, R, Idealista, Leaflet]
-image: logo_Idealista_API.png
+image: logo_Idealista_API_2.png
 draft: false
 editor: 
   markdown: 
@@ -218,7 +218,31 @@ In order to avoid making further requests to the site, previously collected data
 
 ```{r import data}
 data = readRDS(file = "data/data_TS_24_12")
-data
+data |> 
+  # reorder columns
+  select(
+    propertyType,
+    district,
+    price,
+    priceByArea,
+    size,
+    rooms,
+    bathrooms,
+    floor,
+    priceInfo,
+    newDevelopment,
+    parkingSpace,
+    parkingSpacePrice,
+    province,
+    municipality,
+    country,
+    operation,
+    latitude,
+    longitude,
+    status,
+    detailedType,
+    numPhotos
+  ) 
 ```
 
 ## Clean Data
@@ -350,7 +374,7 @@ ggplot(aes(x = floor, z = price_max)) +
 Grafico a barre del prezzo medio delle case in rapporto al piano nella quale si trovano.
 
 ```{r interactive plot}
-#| fig-height: 6
+#| fig-height: 10
 #| fig-width: 10
 
 p = data |> 
