@@ -1,13 +1,15 @@
 ---
 title: MIPC
 description: |
-  International competition for the best portfolio for a fund plan. My aim was to find the best weights that could be used by a pension fund. The portfolio is composed by REITS, Commodities, CAT BOND, Dividends, Short term bonds, Cash and Inflation linked.
+  International competition for the best portfolio for a fund plan. 
 author: Erik De Luca
 date: "2023-10-15"
-categories: [Finance, Portfolio, R, Quantmod, Highcharter, PerformanceAnalytics, Tidyverse, Data.Table, DEoptim, Timetk, Plotly, YahooFinancer, RColorBrewer, GT]
+categories: [Finance, Time Series]
 image: logo_MIPC_Asset_Allocator.png
 draft: false
 ---
+
+My aim was to find the best weights that could be used by a pension fund. The portfolio is composed by REITS, Commodities, CAT BOND, Dividends, Short term bonds, Cash and Inflation linked.
 
 ```{r setup, include=FALSE, eval=TRUE}
 # knitr::optsxx_chunk$set(echo = TRUE)
@@ -113,7 +115,7 @@ detailPortfolio |>
 
 Import data from Yahoo Finance for the last 5 years and construct the portfolio without the weights of each stock.
 
-```{r c, warning=FALSE}
+```{r import data from yahoo, warning=FALSE}
 stockData = lapply(detailPortfolio$tickerList,
                      getSymbols,
                        src = "yahoo",

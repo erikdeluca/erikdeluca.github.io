@@ -33,7 +33,7 @@ format:
   html:
     theme: 
       - cosmo
-      - styles.scss
+      # - styles.scss
     mainfont: figtree
     titlefont: parkinsans
     light: minty
@@ -42,3 +42,4 @@ format:
     page-layout: full
     code-fold: true
     df-print: paged
+    warnings: false
