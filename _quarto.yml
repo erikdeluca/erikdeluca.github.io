@@ -33,9 +33,9 @@ format:
   html:
     theme: 
       - cosmo
-      - styles.scss
-    mainfont: figtree
-    titlefont: parkinsans
+    #  - styles.scss
+    # mainfont: figtree
+    # titlefont: parkinsans
     light: minty
     dark: solar
     toc: true
