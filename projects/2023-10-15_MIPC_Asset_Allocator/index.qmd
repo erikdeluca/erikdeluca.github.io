@@ -57,11 +57,13 @@ detailPortfolio =
       "KO",
       "NVS",
       "NVDA", # nvidia no dividendi
-      # "SHY",  # short term bond -- in truth they are etfs that reproduce the trend
+      # short term bond -- in truth they are etfs that reproduce the trend
+      # "SHY",  
       # "VGSH",
       "SPTS",
       "IBGS.AS",
-      "6C=F",      # cash -- I placed a Canadian dollar future to represent liquidity
+      # cash -- I placed a Canadian dollar future to represent liquidity
+      "6C=F",      
       "XGIU.MI"     # Inflation linked
     ),
     category = c(
@@ -125,20 +127,28 @@ stockData = lapply(detailPortfolio$tickerList,
                      )
 
 # fix tickets that have changed name during import
-detailPortfolio$tickerList[detailPortfolio$tickerList == "KSM-F6.TA"] = "KSM.F6.TA"
-detailPortfolio$tickerList[detailPortfolio$tickerList == "6C=F"] = "X6C"
+detailPortfolio |> 
+  mutate(
+    tickerList = case_when(
+      tickerList == "KSM-F6.TA" ~ "KSM.F6.TA",
+      tickerList == "6C=F" ~ "X6C",
+      TRUE ~ tickerList
+    )
+  ) -> detailPortfolio
 
 # compact the different lists
 nominalPortfolio = do.call(merge,stockData) %>% 
-  na.omit
+  na.omit()
 
 # the CAT BOND is volume-free
 nominalPortfolio$X0P0001MN8G.F.Volume = 1
 
 for(i in 1:nrow(detailPortfolio))
 {
-  columnSelect = (!names(nominalPortfolio) %like% "Volume") & names(nominalPortfolio) %like% detailPortfolio$tickerList[i]
-  nominalPortfolio[,columnSelect] = nominalPortfolio[,columnSelect] / rep(coredata(nominalPortfolio[1,columnSelect])[1],5) 
+  columnSelect = (!names(nominalPortfolio) %like% "Volume") &
+    names(nominalPortfolio) %like% detailPortfolio$tickerList[i]
+  nominalPortfolio[,columnSelect] = nominalPortfolio[,columnSelect] / 
+    rep(coredata(nominalPortfolio[1,columnSelect])[1],5) 
 }
 
 as_tibble(nominalPortfolio)
@@ -149,7 +159,8 @@ as_tibble(nominalPortfolio)
 grafico = highchart(type = "stock")
 for(i in 1:nrow(detailPortfolio))
   grafico = hc_add_series(grafico, 
-                          Cl(nominalPortfolio[,names(nominalPortfolio) %like% detailPortfolio$tickerList[i]]),
+                          Cl(nominalPortfolio[,names(nominalPortfolio) %like%
+                                                detailPortfolio$tickerList[i]]),
                           name = detailPortfolio$tickerList[i])
 grafico
 ```
@@ -163,8 +174,10 @@ portfolio = nominalPortfolio
 
 for(i in 1:nrow(detailPortfolio))
 {
-  columnSelect = (!names(portfolio) %like% "Volume") & names(portfolio) %like% detailPortfolio$tickerList[i]
-  portfolio[,columnSelect] = coredata(nominalPortfolio[,columnSelect]) * detailPortfolio$weight[i] 
+  columnSelect = (!names(portfolio) %like% "Volume") &
+    names(portfolio) %like% detailPortfolio$tickerList[i]
+  portfolio[,columnSelect] = 
+    coredata(nominalPortfolio[,columnSelect]) * detailPortfolio$weight[i] 
 }
 
 as_tibble(portfolio)
@@ -175,7 +188,8 @@ grafico = highchart(type = "stock")
 for(i in 1:nrow(detailPortfolio))
   
   grafico = hc_add_series(grafico, 
-                          Cl(portfolio[,names(portfolio) %like% detailPortfolio$tickerList[i]]),
+                          Cl(portfolio[,names(portfolio) %like% 
+                                         detailPortfolio$tickerList[i]]),
                           name = detailPortfolio$tickerList[i]) 
 grafico
 ```
@@ -192,7 +206,8 @@ myPortfolio = matrix(NA, nrow(portfolio),ncol = length(columnNames))
 for(i in 1:length(columnNames))
 {
   columnSelect = names(portfolio) %like% columnNames[i]
-  myPortfolio[,i] = sapply(1:nrow(portfolio), function(r) sum(coredata(portfolio[r,columnSelect])))  
+  myPortfolio[,i] = sapply(1:nrow(portfolio), 
+                           function(r) sum(coredata(portfolio[r,columnSelect])))  
 }
 
 colnames(myPortfolio) = paste("Portfolio", columnNames, sep = ".")
@@ -220,7 +235,8 @@ p = myPortfolio %>%
   xlab("") +
   ylab("") +
   scale_y_continuous(labels = function(x) scales::percent(x-1)) +
-  scale_color_manual(values = pal[5], labels = "Prediction of portfolio trends using splines") +
+  scale_color_manual(values = pal[5],
+                     labels = "Prediction of portfolio trends using splines") +
   theme(legend.position = "bottom",
         legend.title = element_blank())
 
@@ -264,14 +280,16 @@ ggplotly(p, dynamicTicks = TRUE) %>%
 The current portfolio has these indices, our goal now is to optimise the portfolio to maximise the sharpe rato index, i.e. to maximise the portfolio's return while minimising its risk.
 
 ```{r}
-nominalPortfolioAdj = nominalPortfolio[,names(nominalPortfolio) %like% "Adjusted"] %>%
+nominalPortfolioAdj = 
+  nominalPortfolio[,names(nominalPortfolio) %like% "Adjusted"] %>%
   CalculateReturns() %>% 
   to.yearly.contributions() %>% 
   na.omit()
 
 weight = detailPortfolio$weight
 
-nominalPortfolioAdj = nominalPortfolioAdj[,names(nominalPortfolioAdj) != "Portfolio Return"]
+nominalPortfolioAdj = 
+  nominalPortfolioAdj[,names(nominalPortfolioAdj) != "Portfolio Return"]
 
 mean_ret = colMeans(nominalPortfolioAdj)
 
@@ -340,7 +358,10 @@ sharpe_ratio = vector('numeric', length = num_port)
 
 for (i in seq_along(port_returns)) {
   precisione = 0.9
-  wts = sapply(1:length(weight), function(i) runif(1,precisione * weight[i], (2 - precisione) * weight[i]))
+  wts = sapply(1:length(weight), 
+               function(i) runif(1,
+                                 precisione * weight[i],
+                                 (2 - precisione) * weight[i]))
   # wts = runif(length(tickerList))
   wts = wts/sum(wts)
   
@@ -406,7 +427,8 @@ weight = max_sr[,1:nrow(detailPortfolio)] %>%
   as.numeric() %>% 
   round(4) 
 
-# con l'arrotondamento potrebbe non fare 1 e lo calibro con il primo titolo, ciò non influenzerà significativamente sullo scostamento del portafoglio
+# con l'arrotondamento potrebbe non fare 1 e lo calibro con il primo titolo, 
+# ciò non influenzerà significativamente sullo scostamento del portafoglio
 weight[1] = weight[1] + 1 - sum(weight)
 
 # max_sr %>% 
@@ -468,8 +490,10 @@ portfolio = nominalPortfolio
 
 for(i in 1:nrow(detailPortfolio))
 {
-  columnSelect = (!names(portfolio) %like% "Volume") & names(portfolio) %like% detailPortfolio$tickerList[i]
-  portfolio[,columnSelect] = coredata(nominalPortfolio[,columnSelect]) * weight[i] 
+  columnSelect = (!names(portfolio) %like% "Volume") & 
+    names(portfolio) %like% detailPortfolio$tickerList[i]
+  portfolio[,columnSelect] = 
+    coredata(nominalPortfolio[,columnSelect]) * weight[i] 
 }
 
 columnNames = c("Open", "High", "Low", "Close", "Volume", "Adjusted")
@@ -478,7 +502,9 @@ myPortfolio = matrix(NA, nrow(portfolio),ncol = length(columnNames))
 for(i in 1:length(columnNames))
 {
   columnSelect = names(portfolio) %like% columnNames[i]
-  myPortfolio[,i] = sapply(1:nrow(portfolio), function(r) sum(coredata(portfolio[r,columnSelect])))  
+  myPortfolio[,i] = sapply(
+    1:nrow(portfolio), 
+    function(r) sum(coredata(portfolio[r,columnSelect])))  
 }
 
 colnames(myPortfolio) = paste("Portfolio", columnNames, sep = ".")
@@ -503,7 +529,8 @@ myPortfolio %>%
   xlab("") +
   ylab("") +
   scale_y_continuous(labels = function(x) scales::percent(x)) +
-  scale_color_manual(values = pal[5], labels = "Prediction of portfolio trends using splines") +
+  scale_color_manual(values = pal[5],
+                     labels = "Prediction of portfolio trends using splines") +
   theme(legend.position = "bottom",
         legend.title = element_blank())
 ```
@@ -520,30 +547,39 @@ returnTicker =
     detailPortfolio$tickerList,
     ~dailyReturn(Cl(nominalPortfolio[,names(portfolio) %like% .x]))
   )
-# for(i in 1:nrow(detailPortfolio))
-#   returnTicker = cbind(returnTicker,dailyReturn(Cl(nominalPortfolio[,names(portfolio) %like% detailPortfolio$tickerList[i]])))
 colnames(returnTicker) = detailPortfolio$tickerList
 
 returnTickerIndici = returnTicker %>% 
   as.tibble() %>%
   summarise_all(sum) %>% 
-  pivot_longer(1:nrow(detailPortfolio), names_to = "Titoli", values_to = "Rendimento")  %>% 
+  pivot_longer(
+    1:nrow(detailPortfolio),
+    names_to = "Titoli",
+    values_to = "Rendimento"
+    )  %>% 
   add_column(returnTicker %>%
                as.tibble() %>%
                summarise_all(sd) %>%
-               pivot_longer(1:nrow(detailPortfolio), names_to = "Titoli", values_to = "Varianza") %>% 
+               pivot_longer(
+                 1:nrow(detailPortfolio),
+                 names_to = "Titoli",
+                 values_to = "Varianza"
+                 ) %>% 
                dplyr::select(Varianza)
              ) %>% 
   mutate(Variazione = ifelse(round(Rendimento, 2) != 0,
                              Varianza/abs(Rendimento),
                              1)) 
 
-hValMin = 1.8 # giocando con questo parametro si cambia l'asse delle y modificando la distanza dei punti estremi ai punti centrali
+hValMin = 1.8 # giocando con questo parametro si cambia l'asse delle y
+# modificando la distanza dei punti estremi ai punti centrali
 hValMax = 1
 
 p = returnTickerIndici %>%
   mutate(quantili = punif(Rendimento,
-                       min = hValMin * min(Rendimento), # se non metto hvalmin il min di Rendimento vale 0 e di conseguenza il log tende a meno infinito
+                       min = hValMin * min(Rendimento), # se non metto hvalmin
+                       # il min di Rendimento vale 0 e di conseguenza il log
+                       # tende a meno infinito
                        max = hValMax * max(Rendimento),
                        log.p = T), 
     across(where(is.numeric), \(x) round(x, 4)),
@@ -553,17 +589,21 @@ p = returnTickerIndici %>%
              x = Varianza,
              color = Variazione,
              label = Titoli,
-             z = Rendimento # serve solo per l'etichetta nel grafico interattivo
+             z = Rendimento #serve solo per l'etichetta nel grafico interattivo
              )) +
   geom_point(size = 1.5) + 
   scale_color_distiller(palette = "RdYlGn", direction = -1) +
   scale_x_log10(labels = scales::percent_format(accuracy = .2),
                 breaks = scales::breaks_log(n = 10, base = 10)) +
-  scale_y_continuous(labels = function(x) scales::percent(qunif(x,
-                                                                min = hValMin * min(returnTickerIndici$Rendimento),
-                                                                max = hValMax * max(returnTickerIndici$Rendimento),
-                                                                log.p = T), # associo i valori originali invertendo la funzione di ripartizione
-                                                          scale = 1),
+  scale_y_continuous(
+    labels = function(x) scales::percent(
+      qunif(x,
+            min = hValMin * min(returnTickerIndici$Rendimento),
+            max = hValMax * max(returnTickerIndici$Rendimento),
+            # associo i valori originali invertendo la funzione di ripartizione
+            log.p = T), 
+    scale = 1
+    ),
                      breaks = scales::pretty_breaks(10)) +
   labs(x = "Variation", y = "Return", color = "Coefficient \nof variation") +
   theme(legend.position = "right", 
@@ -590,7 +630,9 @@ VaR(return3mesi[,names(return3mesi) %like% "Open"],
     method = "historical",
     weights = weight_max_sr,
     portfolio_method = "marginal") %>% 
-  pivot_longer(1:length(weight_max_sr)+1, names_to = "Titoli", values_to = "VaR") %>% 
+  pivot_longer(1:length(weight_max_sr) + 1,
+               names_to = "Titoli",
+               values_to = "VaR") %>%
   mutate(VaR = round(VaR *100, 2)) %>% 
   ggplot(aes(x = Titoli, y = VaR, fill = VaR)) +
   geom_col() +
@@ -613,9 +655,15 @@ The following histogram shows the simulation of 1000000 samples taken from a nor
 
 alpha = 0.005
 
-media = sapply(1:nrow(return3mesi), function(i) sum(return3mesi[i,names(nominalPortfolio) %like% "Adjusted"] * weight_max_sr)) %>% mean(na.rm = T)
+media = sapply(1:nrow(return3mesi), function(i)
+  sum(return3mesi[i, names(nominalPortfolio) %like% "Adjusted"]
+      * weight_max_sr)) %>%
+  mean(na.rm = T)
 
-varianza = sapply(1:nrow(return3mesi), function(i) sum(return3mesi[i,names(nominalPortfolio) %like% "Adjusted"] * weight_max_sr)) %>% sd(na.rm = T)
+varianza = sapply(1:nrow(return3mesi), function(i)
+  sum(return3mesi[i,names(nominalPortfolio) %like% "Adjusted"]
+      * weight_max_sr)) %>%
+  sd(na.rm = T)
 
 set.seed(1)
 df = data.frame(x = rnorm(1E6, media, varianza))
@@ -654,11 +702,6 @@ correlazione = return3mesi[,names(return3mesi) %like% "Adjusted"] %>%
 colnames(correlazione) = stringr::str_remove(colnames(correlazione),".Adjusted")
 rownames(correlazione) = stringr::str_remove(colnames(correlazione),".Adjusted")
 
-
-# categories = levels(factor(detailPortfolio$category))
-# pal[which(detailPortfolio$category[detailPortfolio$tickerList == "XGIU.MI"] == categories)]
-
-
 # Funzione personalizzata per etichette colorate
 color_labels = function(labels, colors) {
   mapply(function(label, color) {
@@ -675,16 +718,10 @@ p = correlazione %>%
                        direction = 1) +
   # geom_label(aes(label = round(value,2)), size =2,label.size = 0) +
   scale_x_discrete(limits = rev(rownames(correlazione))) +
-  # scale_color_identity() +  # Imposta scale_color_identity per rimuovere il mapping del colore
-  guides(color = guide_legend(override.aes = list(color = NULL))) +  # Imposta color su NULL per nasconderlo
+  # Imposta color su NULL per nasconderlo
+  guides(color = guide_legend(override.aes = list(color = NULL))) +  
   theme(axis.title = element_blank(),
         axis.text.x = element_text(angle = 30,vjust = .95, hjust = .95))
 
 ggplotly(p)
-
-
-
-# map_chr(detailPortfolio$tickerList,~ palette.colors(length(levels(factor(detailPortfolio$category))),"Dark2")[as.numeric(labels(factor(detailPortfolio$category,ordered = T)[detailPortfolio$tickerList == .x]))])
-# 
-# sapply(detailPortfolio$tickerList,function(x) as.numeric(labels(factor(detailPortfolio$category,ordered = T)[detailPortfolio$tickerList == x])))
 ```

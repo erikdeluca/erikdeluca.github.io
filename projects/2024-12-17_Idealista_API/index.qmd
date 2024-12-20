@@ -38,7 +38,8 @@ Install_And_Load <- function(packages) {
   {library(package_name,character.only=TRUE, quietly = TRUE);}
 }
 
-# the tidyverse functions are used instead of the others in case of same name for two functions
+# the tidyverse functions are used instead of the others in case of same name
+# for two functions
 # conflicted::conflict_prefer_all("tidyverse")
 conflicted::conflict_prefer_all("dplyr")
 conflicted::conflict_prefer_all("ggplot2")
@@ -68,7 +69,8 @@ req <- httr::POST("https://api.idealista.com/oauth/token",
                   httr::add_headers(
                     #"Authorization" = paste("Basic", gsub("n", "", secret)),
                     "Authorization" = paste("Basic", secret, sep = " "),
-                    "Content-Type" = "application/x-www-form-urlencoded;charset=utf-8"
+                    "Content-Type" = 
+                      "application/x-www-form-urlencoded;charset=utf-8"
                   ),
                   body = "grant_type=client_credentials"
 )
@@ -131,7 +133,7 @@ So that we create an empty matrix with the unique items number for ads as column
 ```{r, eval = FALSE}
 pagina = 100
 
-for(z in 16:pagina)
+for(z in 1:pagina)
 {
   print(z)
   
@@ -150,7 +152,16 @@ for(z in 16:pagina)
   if(length(cont_raw[[1]]) == 0) break
 
     # NUOVO: Prendo i nomi delle colonne da tutte le liste e li unisco
-  colNames = unique(unlist(sapply(1:length(cont_raw[[1]]), function(x) cont_raw[[1]][[x]] %>% names()))) %>% sort()
+  map(
+    1:length(cont_raw[[1]]),
+    function(x) {
+      # the if is necessary because the list can be empty in the last page
+      if(length(cont_raw[[1]][[x]]) == 0) return(NULL)
+      return(names(cont_raw[[1]][[x]]))
+    }
+  ) |> 
+    unlist() |>
+    unique() -> colNames
   
   # Creo una matrice vuota dove imagazzinare i valori
   m = matrix(NA, nrow = length(cont_raw[[1]]), ncol = length(colNames))
@@ -159,7 +170,8 @@ for(z in 16:pagina)
   {
     for(c in 1:length(cont_raw[[1]][[r]]))
     {
-      # nel caso l'elemento della lista sia una sotto lista o df vado a spacchettarlo aggiungendo colonne
+      # nel caso l'elemento della lista sia una sotto lista o df vado a 
+      # spacchettarlo aggiungendo colonne
       if(length(cont_raw[[1]][[r]][[c]])>1)
       {
         # non si può fare in un unico caso
@@ -183,9 +195,10 @@ for(z in 16:pagina)
       }else{
         tryCatch(
           {
-            m[r,names(cont_raw[[1]][[r]][c])] = ifelse(length(cont_raw[[1]][[r]][[c]][[1]])>1,
-                                                       cont_raw[[1]][[r]][[c]][[1]][[1]],
-                                                       cont_raw[[1]][[r]][[c]][[1]])
+            m[r,names(cont_raw[[1]][[r]][c])] = 
+              ifelse(length(cont_raw[[1]][[r]][[c]][[1]])>1,
+                     cont_raw[[1]][[r]][[c]][[1]][[1]],
+                     cont_raw[[1]][[r]][[c]][[1]])
           },
           error = function(e) print(paste(z, r, c, e)))
       }
