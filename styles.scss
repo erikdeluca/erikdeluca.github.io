@@ -123,23 +123,27 @@ quarto-document {
 // Coockies policy
 .termsfeed-com---palette-light .cc-nb-reject {
     color: #fff;
-    background-color: $non-photo-blue-2;
+    background-color: $blue-green;
 }
 .termsfeed-com---palette-light .cc-nb-okagree {
     color: #fff;
-    background-color: $non-photo-blue;
+    background-color: $honolulu-blue;
 }
 .termsfeed-com---palette-light .cc-nb-changep {
-    background-color: $white;
-    color: $prussian-blue;
+    background-color: $blue-green;
+    color: #fff;
 }
 .termsfeed-com---palette-light.termsfeed-com---nb {
     background-color: $light-cyan;
     color: $honolulu-blue;
 }
 .termsfeed-com---palette-light.termsfeed-com---nb {
-    background-color: #f5faff;
+    // background-color: #fafeffee;
+    background-color: $light-cyan;
 }
 .termsfeed-com---palette-light .cc-nb-text {
     color: $honolulu-blue;
+}
+.termsfeed-com---palette-light .cc-nb-title {
+    color: $prussian-blue;
 }

@@ -117,7 +117,7 @@ detailPortfolio |>
 
 Import data from Yahoo Finance for the last 5 years and construct the portfolio without the weights of each stock.
 
-```{r import data from yahoo, warning=FALSE}
+```{r import data from yahoo, warning=FALSE, eval=FALSE}
 stockData = lapply(detailPortfolio$tickerList,
                      getSymbols,
                        src = "yahoo",
@@ -125,6 +125,12 @@ stockData = lapply(detailPortfolio$tickerList,
                        to = as.Date("2023-09-29"),
                        auto.assign = F
                      )
+saveRDS(stockData, "data/stockData.rds")
+```
+
+
+```{r import data from data, warning=FALSE}
+stockData = readRDS("data/stockData.rds")
 
 # fix tickets that have changed name during import
 detailPortfolio |> 

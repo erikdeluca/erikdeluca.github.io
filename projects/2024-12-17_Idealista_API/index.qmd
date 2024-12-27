@@ -1,5 +1,5 @@
 ---
-title: "Idealista: case in vendita a Malaga"
+title: "Idealista: housing sale in Trieste"
 author: Erik De Luca
 date: "2024-12-17"
 categories: [API, Real Estate, R, Idealista, Leaflet]
@@ -23,7 +23,10 @@ librerie = c(
   "ggplot2",
   "leaflet", # for the map
   "RColorBrewer", # for the map
+  "doParallel",
+  "parallel",
   # "reticulate", 
+  "tidymodels",
   "tidyverse",
   "plotly",
   "randomForest" # for na.roughfix
@@ -47,6 +50,7 @@ conflicted::conflict_prefer_all("ggplot2")
 
 Install_And_Load(librerie)
 
+theme_set(theme_minimal())
 ```
 
 To access the idealista APIs we need to obtain the credentials.
@@ -255,7 +259,8 @@ data |>
     status,
     detailedType,
     numPhotos
-  ) 
+  ) |> 
+  slice_sample(n = 30)
 ```
 
 ## Clean Data
@@ -343,6 +348,8 @@ data %>%
 
 ## Exploratory data analysis
 
+In this section, some plots are shown to give an idea of the data.
+
 ### Plots
 
 ```{r grid plot}
@@ -353,17 +360,50 @@ data |>
   ) |> 
   summarise(
     n = n(),
-    across(price, mean),
+    across(
+      priceByArea,
+      list(max = max, min = min, mean = mean),
+      .names =  "{.col}_{.fn}"
+      ),
     .by = c(floor, city_area)
   ) |>
+  # transform n to a range between min and max of priceByArea
   mutate(
-    across(c(price, n), list(max = max, min = min), .names =  "{.col}_{.fn}"),
-    across(price, \(x) qunif((x - min(x))/(max(x) - min(x)), min(n), max(n))),
+    across(
+      n,
+      \(x) qunif(
+        (x - min(x))/(max(x) - min(x)),
+        priceByArea_min,
+        priceByArea_max
+        )
+      ),
     .by = city_area
   ) |> 
-ggplot(aes(x = floor, z = price_max)) +
-  geom_line(aes(y = n)) +
-  geom_col(aes(y = price)) +
+ggplot(aes(x = floor)) +
+  # just to have pricebyarea in the y axis
+  geom_line(
+    aes(y = priceByArea_mean),
+    alpha = 0,
+    ) +
+  # geom_ribbon(
+  #   aes(ymin = priceByArea_min, ymax = priceByArea_max),
+  #   fill = "tomato",
+  #   alpha = .3
+  #   ) +
+  geom_col(
+    aes(y = n),
+    alpha = .7,
+    fill = "steelblue",
+    ) +
+  geom_line(
+    aes(y = priceByArea_mean),
+    color = "tomato",
+    ) +
+  geom_ribbon(
+    aes(ymin = priceByArea_min, ymax = priceByArea_max),
+    fill = "tomato",
+    alpha = .3
+    ) +
   facet_wrap(
     ~city_area,
     ncol = 3,
@@ -371,23 +411,25 @@ ggplot(aes(x = floor, z = price_max)) +
     labeller = label_wrap_gen()
     ) +
   scale_y_continuous(
-    name = "Count",
-    sec.axis = sec_axis(trans = ~ ., name = "Price")
+    name = "Price for m^2",
+    labels = ~ dollar(.x, prefix = "€"),
+    # limits = ~ list(0, max(.) * 1.1),
+    # sec.axis = sec_axis(trans = ~ . / max(.y), name = "Price")
   ) +
   scale_x_continuous(
     labels = ~number(., accuracy = 1)
   ) +
   labs(
     y = "",
-    title = "Distibution of the floor of the houses in the different districts"
+    title = "Price for m^2 by floor and district",
+    subtitle = "Distribution of the price by m^2 in function of the floor of the houses in the different districts",
+    
   ) +
   theme_minimal()
 ```
 
-Grafico a barre del prezzo medio delle case in rapporto al piano nella quale si trovano.
-
-```{r interactive plot}
-#| fig-height: 10
+```{r interactive plot, warning=FALSE, message = FALSE}
+#| fig-height: 12
 #| fig-width: 10
 
 p = data |> 
@@ -419,6 +461,7 @@ p = data |>
     legend.position = "bottom",
     legend.title = element_blank(),
   ) +
+  theme_minimal() +
   guides(
     color = guide_legend(nrow = 2)
   ) +
@@ -428,8 +471,12 @@ p = data |>
     title = "Price of the houses in relation to the size",
     color = "District"
   )
+
+# interact the plot
 ggplotly(p, tooltip = "text") |> 
   plotly::layout(
+    width = 800,  
+    height = 750, 
     legend = list(
       orientation = "h", 
       x = 0.5, 
@@ -439,11 +486,12 @@ ggplotly(p, tooltip = "text") |>
   )
 ```
 
-
 ### Maps
 
 Mappa del prezzo delle case nelle diverse zone della città.
 La mappa è interattiva, cliccando sui singoli pallini comparirà una box con ulteriori dati sulla casa.
+
+::: {style="width: 800px; height: 700px;"}
 
 ```{r map}
 pal = with(data, colorFactor(brewer.pal(10,"RdYlGn"), -priceByArea))
@@ -459,6 +507,8 @@ leaflet() %>%
                    color = ~ pal(-priceByArea),
                    popup = ~ popup_info)
 ```
+
+:::
 
 ### Correlation plot
 
@@ -483,6 +533,216 @@ data %>%
                      number.cex = .6)
 ```
 
+### Missing data
+
+Visualize the features with NA and from that understand how to manipulate them.
+
+```{r}
+DataExplorer::plot_missing(data, missing_only = T, ggtheme = theme_minimal())
+```
+
+```{r}
+data |> 
+  select(
+    # select only columns with less than 80% of NAs
+    data |> 
+      summarise(
+        across(everything(), \(x) sum(is.na(x)) / nrow(data))
+      ) |> 
+      pivot_longer(everything()) |> 
+      filter(value < .8) |> 
+      pull(name)
+  ) -> data
+```
+
+## Model
+
+### Pre processing
+
+I develop an easy model to figure out how the variables for an ad influence the price posted on.
+I will use the `{tidymodels}` framework to deal it.
+The dataset will be splitted into 2 dataset, one for training and one for testing.
+
+```{r}
+set.seed(1)
+# data |> glimpse()
+data_split = initial_split(data, prop = .8, strata = city_area)
+
+data_train = training(data_split)
+data_test = testing(data_split)
+```
+
+I use a penalized linear regression via `{glmnet}` package.
+I create a grid of parameters for `penalty` and `mixture` and I'll train a model for each combination of parameters.
+After that I'll estimate the metrics of the models and I'll choice the best one based on RMSE (Root Mean Square Error).
+
+```{r}
+# set the model
+mod <- linear_reg(
+  penalty = tune(),
+  mixture = tune()
+  ) |> 
+  set_engine("glmnet")
+
+data_grid <- grid_regular(penalty(c(5, 0)),
+                          mixture(c(0, 1)),
+                          levels = 30)
+
+# for the cross validation
+set.seed(1)
+data_folds <- vfold_cv(data_train, v = 10)
+```
+
+In the recipe, there is the formula and the pre process rules. I remove all columns with low variance and group less common levels of the factor variables. For the nominal predictors who are NA I assign the unknown category while for numeric ones I impute the median of the category.
+
+```{r}
+# set the recipe
+rec <- recipe(price ~ ., data = data) |> 
+  # these items won't be bake. They could be useful for the future analysis
+  update_role(propertyCode, latitude, longitude, url, description, priceByArea,
+           title, label, new_role = "ID") |> 
+  # remove unuseful features
+  step_rm(thumbnail, priceInfo, distance, externalReference, subtitle,
+          neighborhood, district) |> 
+  # logical to factor
+  step_mutate_at(all_logical_predictors(), fn = ~ as.numeric(.)) |>
+  # remove zero variance predictors
+  step_zv(all_predictors()) |> 
+  # remove features almost equals
+  step_nzv(all_predictors(), freq_cut = 95/5) |>
+  # for some levels who aren't present in training set but in testing set
+  step_novel(all_nominal_predictors()) |> 
+  # add unknown to missing values
+  step_unknown(all_nominal_predictors()) |> 
+  # group unfrequent classes to "other"
+  step_other(all_factor_predictors(), threshold = .1) |>
+  # fill NAs who didn't manage them before
+  step_impute_median(all_numeric_predictors()) |> 
+  # NA omit
+  # step_naomit(all_predictors()) |>
+  # step_dummy(all_logical_predictors(), one_hot = T) |>   
+  step_dummy(all_nominal_predictors(), one_hot = T)  
+  # reduce multicollinearity
+  # step_corr(all_predictors(), threshold = .9, )
+
+workflow() |> 
+  add_model(mod) |> 
+  add_recipe(rec) -> wkflw
+
+# prep(rec, training = data_train) |> 
+#   bake(new_data = NULL)
+
+prep(rec, log_changes = T)
+```
+
+### Tuning
+
+In the plots below there are the model metrics along different parameters (penalty and mixture). 
+
+```{r grid research}
+# Detect the number of cores and store in variable
+cores <- detectCores() -1
+cl <- makeCluster(cores)
+registerDoParallel(cl)
+
+pen_reg_res <- 
+  wkflw %>% 
+  tune_grid(
+    resamples =  data_folds,
+    grid = data_grid
+    )
+
+stopCluster(cl)
+
+pen_reg_res |> 
+  collect_metrics() |>
+  ggplot(aes(mixture, mean, color = penalty, group = penalty)) +
+  geom_line(size = 1.5, alpha = 0.6) +
+  geom_point(size = 2) +
+  facet_wrap(~ .metric, scales = "free", nrow = 2) 
+
+pen_reg_res |> 
+  collect_metrics() |>
+  ggplot(aes(penalty, mean, color = mixture, group = mixture)) +
+  geom_line(size = 1.5, alpha = 0.6) +
+  geom_point(size = 2) +
+  facet_wrap(~ .metric, scales = "free", nrow = 2) +
+  scale_x_log10(labels = scales::label_number())
+```
+
+I'll choise the best model based on RMSE and finalize the workflow.
+
+```{r finalize workflow}
+best_mod <- pen_reg_res |> 
+  select_best("rmse")
+
+final_wf <- finalize_workflow(wkflw, best_mod)
+final_wf
+```
+
+### Final model
+
+The final model has a RMSE of €31.850 and an $R^2$ of 0.21. 
+
+```{r last fit}
+final_fitted <- last_fit(final_wf, split = data_split)
+
+final_fitted |> 
+  collect_metrics() 
+```
+
+I assume that the model could estimate the real price, so in the table below are shown the price published with the delta from the price predicted. This is useful to check when an house is over or under estimated.
+The model doesn't take in account the whole parameters which an house agency should take, so that this model is just to give a first prediction of the house price.
+
+```{r predictions}
+predictions <- final_fitted |> 
+  collect_predictions() |> 
+  select(row = .row, price, predicted = .pred) |> 
+  mutate(
+    delta = price - predicted,
+    delta_percent = scales::percent(delta / predicted, accuracy = .1)
+  )
+predictions
+```
 
 
+
+```{r plot predictions, warning=FALSE}
+plot <-
+  predictions |> 
+  left_join(
+    data |> mutate(row = 1:nrow(data)),
+    by = c("row", "price")
+  ) |> 
+  # TODO: update label
+  ggplot(aes(price, predicted, text = label)) +
+  geom_point(aes(color = rank(-delta))) +
+  geom_abline(intercept = 0, slope = 1) +
+  # geom_text(aes(x = predictions$price[predictions$predicted>1E6],
+  #               y = predictions$predicted[predictions$predicted>1E6]), 
+  #           label = "99 Rooms",
+  #           nudge_x = .2,
+  #           color = "tomato"
+  #           ) +
+  scale_x_log10(label = \(x) scales::dollar(x, prefix = "€", big.mark = ".")) +
+  scale_y_log10(label = \(x) scales::dollar(x, prefix = "€", big.mark = ".")) +
+  scale_color_continuous(low = "tomato", high = "skyblue4") +
+  labs(
+    x = "Price posted on Idealista",
+    y = "Price predicted",
+    title = "Prediction VS Posted"
+  )
+ggplotly(plot, tooltip = c("text", "x", "y"))
+```
+
+
+```{r}
+final <- fit(final_wf, data = data_train)
+
+final |> 
+  tidy() |> 
+  filter(abs(estimate) < 1E5, abs(estimate) > 1E1) |> 
+  ggplot(aes(estimate, term)) +
+  geom_col()
+```
 

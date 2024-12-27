@@ -1,5 +1,5 @@
 ---
-# title: "Erik De Luca"
+title: "Erik De Luca"
 image: media/foto_profilo_az.jpg
 2toc: false
 about: 
