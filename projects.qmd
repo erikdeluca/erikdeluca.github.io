@@ -1,6 +1,6 @@
 ---
-title: "Projects"
-subtitle: "some of my more notable side projects and freelancing work" 
+title: Projects
+# subtitle: 
 listing:
   contents: projects
   feed: true
@@ -14,5 +14,13 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-Here I will list some of the projects I have worked on. 
+Here I will list some of the projects I have worked on.
 
+::: {.callout-note collapse=true}
+I'm still working on transfer my past project to this website. In the meanwhile you can find other projects in:
+
+.   [Rpubs](rpubs.com/erik4399)
+
+.   [Github](github.com/erikdeluca)
+
+:::
