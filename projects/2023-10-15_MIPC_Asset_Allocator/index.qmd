@@ -1,13 +1,16 @@
 ---
-title: MIPC
+title: McGill International Portfolio Challenge
 description: |
-  International competition for the best portfolio for a fund plan. 
+  [International competition](https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge) for the best portfolio in a fund plan, organized by [McGill University](https://www.mcgill.ca/), Canada.
 author: Erik De Luca
 date: "2023-10-15"
 categories: [Finance, Time Series]
 image: logo_MIPC_Asset_Allocator.png
 draft: false
 ---
+
+![](data/first_image_MIPC_Asset_Allocator.png){width="0%"}
+[International competition](https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge) for the best portfolio in a fund plan, organized by [McGill University](https://www.mcgill.ca/), Canada.
 
 My aim was to find the best weights that could be used by a pension fund. The portfolio is composed by REITS, Commodities, CAT BOND, Dividends, Short term bonds, Cash and Inflation linked.
 
@@ -30,8 +33,6 @@ theme_set(theme_bw())
 pal = brewer.pal(8, "Dark2")
 conflicted::conflict_prefer("select", "dplyr")
 ```
-
-
 
 ## Import data
 
@@ -128,7 +129,6 @@ stockData = lapply(detailPortfolio$tickerList,
 saveRDS(stockData, "data/stockData.rds")
 ```
 
-
 ```{r import data from data, warning=FALSE}
 stockData = readRDS("data/stockData.rds")
 
@@ -159,7 +159,6 @@ for(i in 1:nrow(detailPortfolio))
 
 as_tibble(nominalPortfolio)
 ```
-
 
 ```{r}
 grafico = highchart(type = "stock")
@@ -199,7 +198,6 @@ for(i in 1:nrow(detailPortfolio))
                           name = detailPortfolio$tickerList[i]) 
 grafico
 ```
-
 
 ### Portfolio Creation
 
@@ -339,8 +337,7 @@ tibble("Return" = port_returns,
 
 ### MonteCarlo Simulation
 
-A simulation will be carried out using the MonteCarlo method where the experiment will be repeated by randomly extracting the weights, thus finding the best portfolio combination.
-In this case, the experiment will be repeated 5000 times but the portfolio weights will not be completely random, they will vary around the values we preset.
+A simulation will be carried out using the MonteCarlo method where the experiment will be repeated by randomly extracting the weights, thus finding the best portfolio combination. In this case, the experiment will be repeated 5000 times but the portfolio weights will not be completely random, they will vary around the values we preset.
 
 ```{r Montecarlo}
 set.seed(1)
@@ -466,6 +463,7 @@ p = max_sr %>%
 
 ggplotly(p)
 ```
+
 ### Efficient frontier
 
 The graph below shows the values of the portfolios created during the optimisation process. The red dot represents the portfolio with the highest *sharpe ratio*.
@@ -541,13 +539,11 @@ myPortfolio %>%
         legend.title = element_blank())
 ```
 
-
 ## VaR: Value at Risk
 
-In the following graph, the different securities are shown with their yield, their variance on the abscissa and are coloured according to their coefficient of variation.
-This graph helps in the choice of initial weights (pre-optimisation) as it is easy to visualise those that perform best.
+In the following graph, the different securities are shown with their yield, their variance on the abscissa and are coloured according to their coefficient of variation. This graph helps in the choice of initial weights (pre-optimisation) as it is easy to visualise those that perform best.
 
-```{r rendimento vs varianza, warning=FALSE}
+```{r rendimento vs varianza, warning=FALSE, message=FALSE}
 returnTicker = 
   map_dfc(
     detailPortfolio$tickerList,
@@ -619,9 +615,7 @@ p = returnTickerIndici %>%
 ggplotly(p, tooltip = c("z", "x", "color", "label"))
 ```
 
-
-
-```{r VaR singoli titoli, warning=FALSE}
+```{r VaR singoli titoli, warning=FALSE, message=FALSE}
 return3mesi = nominalPortfolio %>% 
   CalculateReturns %>% 
   to.period.contributions("quarters")
