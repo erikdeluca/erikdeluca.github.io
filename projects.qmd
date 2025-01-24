@@ -19,8 +19,9 @@ Here I will list some of the projects I have worked on.
 ::: {.callout-note collapse=true}
 I'm still working on transfer my past project to this website. In the meanwhile you can find other projects in:
 
-.   [Rpubs](rpubs.com/erik4399)
+-   [Rpubs](https://rpubs.com/erik4399)
 
-.   [Github](github.com/erikdeluca)
+-   [Github](https://github.com/erikdeluca)
 
+-   [ShinyApp](https://x0fvjx-erik0de0luca.shinyapps.io/PortafoglioAssicurati/)
 :::
