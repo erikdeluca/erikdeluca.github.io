@@ -9,6 +9,7 @@ $parkinsans: 'Parkinsans', sans-serif;
 // Colorsx  
 $federal-blue: #03045eff;
 $marian-blue: #023e8aff;
+$marian-blue-light: #225eaaff;
 $honolulu-blue: #0077b6ff;
 $blue-green: #0096c7ff;
 $pacific-cyan: #00b4d8ff;
@@ -26,11 +27,14 @@ $picton-blue: #00a8e8ff;
 $navbar-bg: $marian-blue;
 $navbar-fg: $white; 
 $navbar-hl: $light-cyan;
+$title-block-bg: $marian-blue-light;
 $body-bg: $white;
 $body-color: $prussian-blue;
 $footer-bg: $marian-blue; 
 $link-color: $prussian-blue;
-
+$btn-bg: $marian-blue-light;
+$btn-color: $white;
+$btn-border-color: $prussian-blue;
 
 // Inline code
 $code-bg: $light-cyan;
@@ -118,6 +122,18 @@ quarto-document {
 
 .nav-footer {
   background-color: $footer-bg;
+}
+
+/* Only background in the block and not in the whole header
+#title-block-header {
+  background-color: $title-block-bg;
+}
+*/
+
+.btn {
+  background-color: $btn-bg;
+  color: $btn-color;
+  border-color: $btn-border-color;
 }
 
 // Coockies policy

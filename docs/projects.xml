@@ -10,7 +10,46 @@
 <atom:link href="https://erikdeluca.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Mon, 16 Dec 2024 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 09 Jan 2025 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Statistical Analysis of Urban Waste</title>
+  <link>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="Analisi_dei_Rifiuti_nei_Comuni_del_FVG.pdf" class="btn" target="_blank"><i class="fa-brands fa-file-pdf-o" aria-label="file-pdf-o"></i> PDF</a> <a href="https://github.com/erikdeluca/Analisi-dei-Rifiuti-nel-FVG" class="btn" target="_blank"><i class="fa-brands fa-github" aria-label="github"></i> source code</a></p>
+<!-- ![](copertina.png){width = 50%} -->
+<p>This project involves a comprehensive statistical analysis of urban waste data from the municipalities in Friuli-Venezia Giulia, conducted as part of a university exam in Computational Statistics and Multivariate Models.</p>
+<p>The analysis began with data cleaning in R, followed by a detailed statistical examination using SAS. Univariate and multivariate analyses were performed, including correlation matrix calculations and both hierarchical and non-hierarchical clustering analyses. A subsequent PCA was conducted to assess the representativeness of the clustering, with clusters visually represented on the first two principal components.</p>
+<p>The integration of Quarto documents provides a clear presentation of the methodology and results. The entire analysis and documentation are in Italian, offering insights into waste management practices and patterns across the region.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The analysis and documentation are in Italian.</p>
+</div>
+</div>
+<p><object data="Analisi_dei_Rifiuti_nei_Comuni_del_FVG.pdf" type="application/pdf" width="100%" height="600"><a href="Analisi_dei_Rifiuti_nei_Comuni_del_FVG.pdf" download="">Download PDF file.</a></object></p>
+
+
+
+ ]]></description>
+  <category>SAS</category>
+  <category>Reporting</category>
+  <category>PCA</category>
+  <category>Clustering</category>
+  <guid>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/</guid>
+  <pubDate>Thu, 09 Jan 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/copertina.png" medium="image" type="image/png" height="87" width="144"/>
+</item>
 <item>
   <title>Idealista: housing sale in Trieste</title>
   <dc:creator>Erik De Luca</dc:creator>

@@ -1,0 +1,25 @@
+---
+title: Statistical Analysis of Urban Waste
+description: |
+  An in-depth statistical analysis of urban waste data across municipalities in Friuli-Venezia Giulia for a university exam project.
+date: 2025-01-10
+categories: [SAS, Reporting, PCA, Clustering]
+image: copertina.png
+draft: false
+---
+
+[{{< fa brands file-pdf-o >}} PDF](Analisi_dei_Rifiuti_nei_Comuni_del_FVG.pdf){.btn target="_blank"} [{{< fa brands github >}} source code](https://github.com/erikdeluca/Analisi-dei-Rifiuti-nel-FVG){.btn target="_blank"}
+
+<!-- ![](copertina.png){width = 50%} -->
+
+This project involves a comprehensive statistical analysis of urban waste data from the municipalities in Friuli-Venezia Giulia, conducted as part of a university exam in Computational Statistics and Multivariate Models.
+
+The analysis began with data cleaning in R, followed by a detailed statistical examination using SAS. Univariate and multivariate analyses were performed, including correlation matrix calculations and both hierarchical and non-hierarchical clustering analyses. A subsequent PCA was conducted to assess the representativeness of the clustering, with clusters visually represented on the first two principal components.
+
+The integration of Quarto documents provides a clear presentation of the methodology and results. The entire analysis and documentation are in Italian, offering insights into waste management practices and patterns across the region.
+
+::: callout-note
+The analysis and documentation are in Italian.
+:::
+
+{{< pdf Analisi_dei_Rifiuti_nei_Comuni_del_FVG.pdf width=100% height=600 >}}
