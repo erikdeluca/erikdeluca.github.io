@@ -8,7 +8,7 @@ image: logo_2021-08-29_Dashboard_Life_Insurances.png
 draft: false
 ---
 
-[{{< fa brands r-project >}} shiny dashboard](https://samanthacsik.shinyapps.io/strava_dashboard/){.btn target=_blank} [{{< fa brands github >}} source code](https://github.com/erikdeluca/Portafoglio-assicurazioni-vita){.btn target=_blank}
+[{{< fa brands r-project >}} shiny dashboard](https://x0fvjx-erik0de0luca.shinyapps.io/Dashboard_Life_Insurance/){.btn target=_blank} [{{< fa brands github >}} source code](https://github.com/erikdeluca/Portafoglio-assicurazioni-vita){.btn target=_blank}
 
 <br>
 
