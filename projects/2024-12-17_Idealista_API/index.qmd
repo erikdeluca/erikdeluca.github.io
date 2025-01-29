@@ -1,6 +1,6 @@
 ---
 title: "Idealista: housing sale in Trieste"
-author: Erik De Luca
+# author: Erik De Luca
 date: "2024-12-17"
 categories: [API, Real Estate, R, Idealista, Leaflet]
 image: logo_Idealista_API_2.png
