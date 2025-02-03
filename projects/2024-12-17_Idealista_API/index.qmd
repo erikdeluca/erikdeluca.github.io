@@ -32,6 +32,7 @@ librerie = c(
   "randomForest" # for na.roughfix
 )
 
+# OLD function
 Install_And_Load <- function(packages) {
   k <- packages[!(packages %in% installed.packages()[,"Package"])];
   if(length(k))
@@ -40,6 +41,8 @@ Install_And_Load <- function(packages) {
   for(package_name in packages)
   {library(package_name,character.only=TRUE, quietly = TRUE);}
 }
+
+# pak::pak(librerie)
 
 # the tidyverse functions are used instead of the others in case of same name
 # for two functions
@@ -51,6 +54,8 @@ conflicted::conflict_prefer_all("ggplot2")
 Install_And_Load(librerie)
 
 theme_set(theme_minimal())
+
+thematic::thematic_rmd()
 ```
 
 To access the idealista APIs we need to obtain the credentials.
@@ -674,7 +679,7 @@ I'll choise the best model based on RMSE and finalize the workflow.
 
 ```{r finalize workflow}
 best_mod <- pen_reg_res |> 
-  select_best("rmse")
+  select_best(metric = "rmse")
 
 final_wf <- finalize_workflow(wkflw, best_mod)
 final_wf

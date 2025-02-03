@@ -4,10 +4,10 @@ project:
 
 website:
   title: "Erik De Luca"
-  favicon: media/logo.png
+  favicon: "media/logo2.0.png"
   navbar:
     title: false
-    logo: media/logo.png
+    logo: "media/logo2.1 rectangle.png"
     logo-alt: "Logo with a stylized E, D and L"
     left:
       - href: index.qmd
