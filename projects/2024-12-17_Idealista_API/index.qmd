@@ -8,6 +8,14 @@ draft: false
 editor: 
   markdown: 
     wrap: sentence
+comments:
+  giscus:
+    repo: erikdeluca/erikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
 ---
 
 The aim of this project is to download all the ads of houses for sale in Trieste from the Idealista website and conduct a preliminary analysis of the data.

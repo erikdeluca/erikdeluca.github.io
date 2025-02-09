@@ -7,6 +7,14 @@ date: "2023-10-15"
 categories: [Finance, Time Series]
 image: logo_MIPC_Asset_Allocator.png
 draft: false
+comments:
+  giscus:
+    repo: erikdeluca/erikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
 ---
 
 ![](data/first_image_MIPC_Asset_Allocator.png){width="0%"}

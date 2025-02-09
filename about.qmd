@@ -1,5 +1,7 @@
 ---
 title: "About me"
+website:
+  toc: true
 ---
 
 ## Experience

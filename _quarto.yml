@@ -4,11 +4,11 @@ project:
 
 website:
   title: "Erik De Luca"
-  favicon: "media/logo2.0.png"
+  favicon: "media/logo_2_0.png"
   navbar:
     title: false
     logo: "media/logo2.1 rectangle.png"
-    logo-alt: "Logo with a stylized E, D and L"
+    logo-alt: "Logo with some points in a chart and erik de luca written"
     left:
       - href: index.qmd
         text: Home
@@ -29,10 +29,13 @@ website:
     type: express
     # style: headline
     palette: light
+    # storage: cookies
   google-analytics:
     tracking-id: G-X7MSMF2M7M
     anonymize-ip: true
   site-url: https://erikdeluca.github.io
+  # for sharing links  of my website
+  open-graph: true
 
 format:
   html:

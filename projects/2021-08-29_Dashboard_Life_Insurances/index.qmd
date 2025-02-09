@@ -1,14 +1,22 @@
 ---
 title: "Life Insurance Dashboard"
 description: |
-  A Shiny app for managing and visualizing a homogeneous life insurance portfolio, currently in development.
+  A Shiny app for managing and visualizing a homogeneous life insurance portfolio.
 date: 2021-08-29
-categories: [Shiny, Life Insurance]
+categories: [Shiny, Life Insurance, Actuarial Science]
 image: logo_2021-08-29_Dashboard_Life_Insurances.png
 draft: false
+comments:
+  giscus:
+    repo: erikdeluca/erikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
 ---
 
-[{{< fa brands r-project >}} shiny dashboard](https://samanthacsik.shinyapps.io/strava_dashboard/){.btn target=_blank} [{{< fa brands github >}} source code](https://github.com/erikdeluca/Portafoglio-assicurazioni-vita){.btn target=_blank}
+[{{< fa brands r-project >}} shiny dashboard](https://erikdeluca.shinyapps.io/Life-Insurance-Portfolio-Dashboard/){.btn target=_blank} [{{< fa brands github >}} source code](https://github.com/erikdeluca/Portafoglio-assicurazioni-vita){.btn target=_blank}
 
 <br>
 
