@@ -1,3 +1,9 @@
+library(tidyverse)
+library(ggplot2)
+text_color = "#f2fbfe"
+bg_color = "#023e8aff"
+points_color = "#90e0efff"
+
 {
   set.seed(323)
   tibble(
@@ -10,10 +16,10 @@
     ggplot() +
     annotate(
       "text",
-      x = 21,
-      y = .4,
+      x = 19,
+      y = .6,
       label = "Erik De Luca",
-      size = 20,
+      size = 19,
       color = text_color,
       family = "Parkinsans"
     ) +
@@ -21,6 +27,12 @@
       aes(x, y, alpha = alpha_points, size = size_points),
       color = points_color,
     ) + 
+    # geom_line(
+    #   aes(x, y),
+    #   alpha = .2, 
+    #   color = points_color,
+    #   linetype = "dashed"
+    # ) +
     scale_y_continuous(
       transform = "log10",
     ) +
@@ -33,4 +45,6 @@
       plot.background = element_rect(fill = bg_color),
       legend.position = "none"
     )
+    # ) -> p
+    # ggsave("media/cover_linkedin.png", plot = p, width = 1536, height = 768, units = "px")
 } 

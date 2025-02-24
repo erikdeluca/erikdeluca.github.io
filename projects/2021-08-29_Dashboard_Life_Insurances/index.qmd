@@ -3,8 +3,9 @@ title: "Life Insurance Dashboard"
 description: |
   A Shiny app for managing and visualizing a homogeneous life insurance portfolio.
 date: 2021-08-29
+date-modified: 2025-02-17
 categories: [Shiny, Life Insurance, Actuarial Science]
-image: logo_2021-08-29_Dashboard_Life_Insurances.png
+image: panel.png
 draft: false
 comments:
   giscus:
@@ -27,7 +28,7 @@ The app allows users to manipulate parameters such as age, premium rates, and mo
 In 2023, the project underwent enhancements with improved graphics and function optimization. 
 Further developments in 2025 saw its integration into a comprehensive dashboard using Quarto and Shiny, enriching the user experience and interaction. 
 
-While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates.
+<!-- While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates. -->
 
 <!-- # Motivation -->
 

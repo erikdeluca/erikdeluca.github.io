@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://erikdeluca.github.io/projects.html</loc>
-    <lastmod>2025-01-24T14:00:15.957Z</lastmod>
+    <lastmod>2025-02-24T11:15:04.644Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index.html</loc>
@@ -10,11 +10,11 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/index.html</loc>
-    <lastmod>2025-02-09T17:53:21.745Z</lastmod>
+    <lastmod>2025-02-17T17:18:57.099Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/index.html</loc>
-    <lastmod>2025-01-21T13:51:51.053Z</lastmod>
+    <lastmod>2025-02-24T16:08:40.307Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/about.html</loc>
@@ -31,5 +31,13 @@
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/index.html</loc>
     <lastmod>2025-02-09T17:48:30.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/publications.html</loc>
+    <lastmod>2025-02-24T15:29:52.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/publications/2025-02-24 HPV t zero/index.html</loc>
+    <lastmod>2025-02-24T16:02:35.015Z</lastmod>
   </url>
 </urlset>

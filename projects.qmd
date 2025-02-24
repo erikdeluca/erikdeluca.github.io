@@ -23,5 +23,4 @@ I'm still working on transfer my past project to this website. In the meanwhile 
 
 -   [Github](https://github.com/erikdeluca)
 
--   [ShinyApp](https://x0fvjx-erik0de0luca.shinyapps.io/PortafoglioAssicurati/)
 :::

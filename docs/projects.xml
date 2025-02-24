@@ -7478,7 +7478,7 @@ font-style: inherit;">ggplotly</span>(p)</span></code></pre></div>
 <p>This project introduces a Shiny app developed in R, originally crafted in 2020 for a university exam to manage and visualize a homogeneous life insurance portfolio.</p>
 <p>The app allows users to manipulate parameters such as age, premium rates, and mortality tables, providing insights into portfolio performance and risk management.</p>
 <p>In 2023, the project underwent enhancements with improved graphics and function optimization. Further developments in 2025 saw its integration into a comprehensive dashboard using Quarto and Shiny, enriching the user experience and interaction.</p>
-<p>While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates.</p>
+<!-- While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates. -->
 <!-- # Motivation -->
 <!-- It doesn't get much better than playing around with data that mean a lot to you. For me, that's my Strava data (yes, I do recognize that that might sound a bit silly) -- I'm fortunate enough to have near-immediate access to some of the greatest hiking trails around (yes, I also recognize that I'm totally biased), and spending my free time romping around our local mountains has been so important for my mental health. *So,* when I was ready to do my first real deep-dive into learning how to build Shiny apps and dashboards, I knew these were the data I needed to use. -->
 <!-- # What's on the dashboard? -->
@@ -7495,7 +7495,7 @@ font-style: inherit;">ggplotly</span>(p)</span></code></pre></div>
   <category>Actuarial Science</category>
   <guid>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</guid>
   <pubDate>Sat, 28 Aug 2021 22:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/logo_2021-08-29_Dashboard_Life_Insurances.png" medium="image" type="image/png" height="40" width="144"/>
+  <media:content url="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 </channel>
 </rss>
