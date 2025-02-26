@@ -1,17 +1,17 @@
 [
   {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/2025-02-24 HPV t zero/index.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/2025-01-10_Waste_Analysis_R_SAS/index.html",
       "/projects/2024-12-17_Idealista_API/index.html",
       "/projects/2023-10-15_MIPC_Asset_Allocator/index.html",
       "/projects/2021-08-29_Dashboard_Life_Insurances/index.html"
-    ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": [
-      "/publications/2025-02-24 HPV t zero/index.html"
     ]
   }
 ]

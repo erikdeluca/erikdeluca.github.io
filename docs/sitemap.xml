@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://erikdeluca.github.io/publications.html</loc>
+    <lastmod>2025-02-24T15:29:52.176Z</lastmod>
+  </url>
+  <url>
     <loc>https://erikdeluca.github.io/projects.html</loc>
     <lastmod>2025-02-24T11:15:04.644Z</lastmod>
   </url>
@@ -30,11 +34,7 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/index.html</loc>
-    <lastmod>2025-02-09T17:48:30.992Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/publications.html</loc>
-    <lastmod>2025-02-24T15:29:52.176Z</lastmod>
+    <lastmod>2025-02-24T15:51:51.486Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/publications/2025-02-24 HPV t zero/index.html</loc>
