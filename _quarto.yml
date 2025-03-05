@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Erik De Luca"
-  favicon: "media/logo_2_0.png"
+  favicon: "media/logo_3_0.png"
   navbar:
     title: false
     logo: "media/logo2.1 rectangle.png"

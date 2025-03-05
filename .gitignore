@@ -12,3 +12,5 @@
 /.quarto/
 /projects/2024-12-17_Idealista_API/data
 /projects/2024-12-17_Idealista_API/keys
+
+/.luarc.json
