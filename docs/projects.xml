@@ -9,7 +9,7 @@
 <link>https://erikdeluca.github.io/projects.html</link>
 <atom:link href="https://erikdeluca.github.io/projects.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.5.57</generator>
+<generator>quarto-1.6.42</generator>
 <lastBuildDate>Thu, 09 Jan 2025 23:00:00 GMT</lastBuildDate>
 <item>
   <title>Statistical Analysis of Urban Waste</title>
@@ -3822,7 +3822,7 @@ font-style: inherit;">1</span>)</span></code></pre></div>
 
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="category" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">category</th>
 <th id="weight" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">weight</th>
 </tr>
@@ -5410,7 +5410,7 @@ font-style: inherit;">2</span>)</span></code></pre></div>
 
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Return" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Return</th>
 <th id="Risk" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Risk</th>
 <th id="VaR-a-3-mesi" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">VaR a 3 mesi</th>

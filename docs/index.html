@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c7f5beccb3dead891990c9bdc6f1743c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -162,7 +162,6 @@ cookieconsent.run({
   </div>
 </header><main class="content column-page" id="quarto-document-content">
 <p>Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics <i class="fa-solid fa-chart-line" aria-label="chart-line"></i> and actuarial techniques, I have a keen interest in quantitative finance <i class="fa-solid fa-money-bill-wave" aria-label="money-bill-wave"></i>, portfolio optimization <i class="fa-solid fa-chart-pie" aria-label="chart-pie"></i>, and public health analytics <i class="fa-solid fa-heartbeat" aria-label="heartbeat"></i>. When not immersed in numbers, I indulge in travel <i class="fa-solid fa-plane" aria-label="plane"></i>, craft beer brewing <i class="fa-solid fa-beer" aria-label="beer"></i>, and judo <i class="fa-solid fa-user-ninja" aria-label="user-ninja"></i>. Welcome to my corner of the web!</p>
-<p>proba</p>
 
 
 </main> 
@@ -262,8 +261,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -374,7 +371,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
