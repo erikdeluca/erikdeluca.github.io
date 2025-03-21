@@ -1,0 +1,37 @@
+---
+title: HPV and STI Prevention Begins at School  
+subtitle: Preliminary Data from Pre-Intervention Evaluation in Secondary Schools  
+description: |
+  This project evaluates adolescent knowledge about HPV and STDs, highlighting gaps in awareness and vaccination practices.  
+date: 2025-02-28  
+categories: [Public Health, Biostatistics, HPV, STD, Survey Analysis]  
+image: logo.png  
+comments:  
+  giscus:  
+    repo: erikdeluca/erikdeluca.github.io  
+    repo-id: R_kgDONcJGag  
+    category: Announcements  
+    category-id: DIC_kwDONcJGas4Cmzjk  
+    reactions-enabled: true  
+    mapping: pathname  
+---
+
+[{{< fa newspaper >}} ESPRIT Project](https://www.progettoesprit.it/){.btn target="_blank"}
+
+## About
+
+This project, part of the ESPRIT initiative, focuses on assessing and improving the knowledge of HPV and STDs among adolescents in Italy. Conducted in collaboration with the Health Authority, the study surveyed 598 students from lower and upper secondary schools across three Italian regions. The aim was to evaluate their awareness, knowledge, and vaccination practices regarding HPV to address misconceptions and improve public health outcomes.
+
+Our recent publication, ["Knowledge About HPV and the HPV Vaccine: Observational Study on a Convenience Sample of Adolescents from Select Schools in Three Regions in Italy"](https://www.mdpi.com/2076-393X/13/3/227#), underscores significant gaps in knowledge and highlights the need for coordinated national strategies to enhance awareness and increase HPV vaccination rates. The findings reveal that while awareness is low, there is a critical need to address these public health issues through targeted educational interventions.
+
+During the conference to present the first phase of the project, I presented the preliminary data on the students' knowledge and attitudes.
+
+Below, you can see my presentation and the event flyer. More details about the event are available on the [project website](https://www.progettoesprit.it/).
+
+## Slides
+
+{{< pdf presentazione-pdf.pdf width=100% height=600 >}}
+
+## Flyer
+
+{{< pdf Programma_Evento_ESPRIT.pdf width=100% height=600 >}}

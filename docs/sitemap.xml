@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://erikdeluca.github.io/publications.html</loc>
-    <lastmod>2025-02-24T15:29:52.176Z</lastmod>
+    <lastmod>2025-03-21T17:21:38.836Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects.html</loc>
-    <lastmod>2025-02-24T11:15:04.644Z</lastmod>
+    <lastmod>2025-03-21T17:19:31.759Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/index.html</loc>
-    <lastmod>2025-03-14T08:55:04.428Z</lastmod>
+    <lastmod>2025-03-17T08:25:30.940Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/about.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index.html</loc>
-    <lastmod>2025-03-14T08:54:00.742Z</lastmod>
+    <lastmod>2025-03-17T09:59:06.578Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/index.html</loc>
@@ -38,6 +38,10 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/publications/2025-02-24 HPV t zero/index.html</loc>
-    <lastmod>2025-02-24T16:22:17.676Z</lastmod>
+    <lastmod>2025-03-21T17:27:21.008Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/talks/02-2025-Presentazione-ESPRIT/index.html</loc>
+    <lastmod>2025-03-21T17:26:09.437Z</lastmod>
   </url>
 </urlset>
