@@ -23,7 +23,7 @@ bibliography: references.bib
 
 ## About This Study
 
-I’m thrilled to share our recent publication in the journal Vaccines! This study explores the awareness, knowledge, and vaccination practices of Italian adolescents regarding the Human Papillomavirus (HPV) and its vaccine. As a contributor to the methodology and formal analysis sections, I helped reveal crucial insights into the existing gaps in knowledge and vaccination coverage.
+I want to share our recent publication in the journal Vaccines! This study explores the awareness, knowledge, and vaccination practices of Italian adolescents regarding the Human Papillomavirus (HPV) and its vaccine. As a contributor to the methodology and formal analysis sections, I helped reveal crucial insights into the existing gaps in knowledge and vaccination coverage.
 
 Our research, conducted across three regions in Italy, highlights significant misunderstandings among adolescents about HPV transmission and the diseases it causes. The study emphasizes the urgent need for better educational efforts and coordinated national strategies to enhance awareness and increase vaccination rates.
 
