@@ -1,0 +1,12 @@
+{
+  "hash": "c8ebcfc86643a7b9f6bf582052454f84",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Biostatistician Interview\nsubtitle: Analysis of an oncological dataset \ndescription: |\n  To write something long\ndate: 2025-03-10  \ncategories: [Biostatistics, Survival Analysis, Interview, Revealjs]  \nimage: logo.png  \ncomments:\n  giscus:\n    repo: erikdeluca/erpikdeluca.github.io\n    repo-id: R_kgDONcJGag\n    category: Announcements\n    category-id: DIC_kwDONcJGas4Cmzjk\n    reactions-enabled: true\n    mapping: pathname\n---\n\n\n[{{< fa newspaper >}} PDF Slides](https://www.progettoesprit.it/){.btn target=\"_blank\"}\n\n## About\n\n\n\n```{HTML}\n# <iframe src=\"docs/projects/2025-03-10_Biostatistician_Interview/akkodis%20interview.html#/title-slide\" width=\"100%\" height=\"600px\"></iframe>\n<iframe src=\"akkodis%20interview.html#/title-slide\" width=\"100%\" height=\"600px\"></iframe>\n```\n\n\nThis project, part of the ESPRIT initiative, focuses on assessing and improving the knowledge of HPV and STDs among adolescents in Italy. Conducted in collaboration with the Health Authority, the study surveyed 598 students from lower and upper secondary schools across three Italian regions. The aim was to evaluate their awareness, knowledge, and vaccination practices regarding HPV to address misconceptions and improve public health outcomes.\n\nOur recent publication, [\"Knowledge About HPV and the HPV Vaccine: Observational Study on a Convenience Sample of Adolescents from Select Schools in Three Regions in Italy\"](https://www.mdpi.com/2076-393X/13/3/227#), underscores significant gaps in knowledge and highlights the need for coordinated national strategies to enhance awareness and increase HPV vaccination rates. The findings reveal that while awareness is low, there is a critical need to address these public health issues through targeted educational interventions.\n\nDuring the conference to present the first phase of the project, I presented the preliminary data on the students' knowledge and attitudes.\n\nBelow, you can see my presentation and the event flyer. More details about the event are available on the [project website](https://www.progettoesprit.it/).\n\n<!-- ## Slides -->\n\n<!-- {{< pdf presentazione-pdf.pdf width=100% height=600 >}} -->\n\n<!-- ## Flyer -->\n\n<!-- {{< pdf Programma_Evento_ESPRIT.pdf width=100% height=600 >}} -->\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

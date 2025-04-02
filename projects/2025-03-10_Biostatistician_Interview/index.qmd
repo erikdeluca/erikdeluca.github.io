@@ -1,0 +1,29 @@
+---
+title: Biostatistician Interview
+subtitle: Analysis of an oncological dataset 
+description: |
+  To write something long
+date: 2025-03-10  
+categories: [Biostatistics, Survival Analysis, Interview, Revealjs]  
+image: logo.png  
+comments:
+  giscus:
+    repo: erikdeluca/erpikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
+---
+
+[{{< fa newspaper >}} Full Screen Slides](akkodis%20interview.html#/title-slide){.btn target="_blank"}
+
+## About
+
+## Interactive Slides
+
+<iframe src="akkodis%20interview.html#/title-slide" width="100%" height="600px"></iframe>
+
+## Slides in PDF
+
+{{< pdf Biostatistician-interview.pdf width=100% height=600 >}}
