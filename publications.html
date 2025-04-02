@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,9 +111,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -239,14 +239,14 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Publications and Talks</h1>
             <p class="subtitle lead">Scientific papers and talks where I worked on</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -257,10 +257,9 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Qmlvc3RhdGlzdGljcw==">Biostatistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SFBW">HPV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VydmV5JTIwQW5hbHlzaXM=">Survey Analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -270,7 +269,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="listing-publications_id" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ0hQViUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740355200000" data-listing-file-modified-sort="1743594416248" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="880">
+<div class="quarto-post image-right" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ0hQViUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740355200000" data-listing-file-modified-sort="1743595650667" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="880">
 <div class="thumbnail">
 <p><a href="./publications/2025-02-24 HPV t zero/index.html" class="no-external"></a></p><a href="./publications/2025-02-24 HPV t zero/index.html" class="no-external">
 <p><img loading="lazy" src="./publications/2025-02-24 HPV t zero/cover.png" class="thumbnail-image"></p>
@@ -282,17 +281,6 @@ window.Quarto = {
 </h3>
 <div class="listing-subtitle">
 <a href="./publications/2025-02-24 HPV t zero/index.html" class="no-external">Observational Study on a Convenience Sample of Adolescents from Select Schools in Three Regions in Italy </a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Qmlvc3RhdGlzdGljcw=='); return false;">
-Biostatistics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SFBW'); return false;">
-HPV
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3VydmV5JTIwQW5hbHlzaXM='); return false;">
-Survey Analysis
-</div>
 </div>
 <div class="listing-description">
 <a href="./publications/2025-02-24 HPV t zero/index.html" class="no-external">Bridging Knowledge Gaps: HPV Awareness and Vaccination Efforts in Italian Schools </a>
