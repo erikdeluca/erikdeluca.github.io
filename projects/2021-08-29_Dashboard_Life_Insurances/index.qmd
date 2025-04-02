@@ -2,8 +2,9 @@
 title: "Life Insurance Dashboard"
 description: |
   A Shiny app for managing and visualizing a homogeneous life insurance portfolio.
-date: 2021-08-29
-date-modified: 2025-02-17
+# date: 2021-08-29
+date: 2025-02-17
+# date-modified: 2025-02-17
 categories: [Shiny, Life Insurance, Actuarial Science]
 image: panel.png
 draft: false

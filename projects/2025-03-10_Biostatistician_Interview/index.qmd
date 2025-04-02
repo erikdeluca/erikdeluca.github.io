@@ -2,7 +2,7 @@
 title: Biostatistician Interview
 subtitle: Analysis of an oncological dataset 
 description: |
-  To write something long
+  Analyzing a dataset related to lung cancer patients to demonstrate my skills in data analysis and statistical modeling
 date: 2025-03-10  
 categories: [Biostatistics, Survival Analysis, Interview, Revealjs]  
 image: logo.png  
@@ -16,13 +16,47 @@ comments:
     mapping: pathname
 ---
 
-[{{< fa newspaper >}} Full Screen Slides](akkodis%20interview.html#/title-slide){.btn target="_blank"}
 
-## About
+## Overview
+
+This article provides an overview of the technical project I completed as part of a biostatistician interview process. The assignment involved analyzing an oncology dataset using R, with the objective of demonstrating statistical and analytical skills through a series of exercises. Although I did not secure the position, the feedback received has been invaluable for my professional growth in the field of clinical trial statistics.
 
 ## Interactive Slides
 
+[{{< fa newspaper >}} Full Screen Slides](akkodis%20interview.html#/title-slide){.btn target="_blank"}
+
 <iframe src="akkodis%20interview.html#/title-slide" width="100%" height="600px"></iframe>
+
+## Project Description
+
+### Dataset
+
+The dataset provided for the project focused on lung cancer patients, with `SurvTime` as the primary response variable, representing survival time in days. Key covariates included:
+
+- `Cell`: Type of cancer cell
+- `Therapy`: Type of therapy (standard or test)
+- `Prior`: Prior therapy status (0 for no, 10 for yes)
+- `Age`: Age in years
+- `DiagTime`: Time in months from diagnosis to trial entry
+- `Kps`: Performance status
+
+A censoring indicator variable was also included to distinguish between censored and event times. The dataset required transformation and preparation for analysis, aligning with clinical research standards.
+
+### Exercises and Analysis
+
+The project required solving six exercises, each designed to assess different analytical skills:
+
+1. **Maximum Survival Time for Adeno Cell Type:** Identifying the longest survival time for the adeno cell type.
+2. **Average Age of Subjects:** Calculating the mean age of study participants.
+3. **Cell Type Frequency:** Determining which cell type appeared most frequently.
+4. **Descriptive Statistics:** Generating descriptive statistics for all numeric variables.
+5. **Survival Analysis:** Performing survival analysis using Kaplan-Meier curves and Cox regression.
+6. **Multivariable Analysis:** Analyzing the effect of age on hazard ratios across different cancerous cells.
+
+### Methodology and Tools
+
+The analysis involved utilizing a variety of R packages for data cleaning, statistical analysis, and visualization, including `tidyverse`, `survival`, and `ggsurvfit`. The project was presented using `revealjs` for interactive slides, showcasing the statistical findings and interpretations.
+
 
 ## Slides in PDF
 

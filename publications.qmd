@@ -10,7 +10,7 @@ listing:
     image-align: right
     max-description-length: 200
     date-format: medium
-    categories: true
+    # categories: true
     sort-ui: false
     filter-ui: false
   - id: talks_id
@@ -20,7 +20,7 @@ listing:
     image-align: right
     max-description-length: 200
     date-format: medium
-    categories: true
+    # categories: true
     sort-ui: false
     filter-ui: false
 page-layout: full

@@ -19,14 +19,47 @@
 
 
 
-<p><a href="akkodis interview.html#/title-slide" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> Full Screen Slides</a></p>
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This article provides an overview of the technical project I completed as part of a biostatistician interview process. The assignment involved analyzing an oncology dataset using R, with the objective of demonstrating statistical and analytical skills through a series of exercises. Although I did not secure the position, the feedback received has been invaluable for my professional growth in the field of clinical trial statistics.</p>
 </section>
 <section id="interactive-slides" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-slides">Interactive Slides</h2>
+<p><a href="akkodis interview.html#/title-slide" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> Full Screen Slides</a></p>
 <iframe src="akkodis interview.html#/title-slide" width="100%" height="600px">
 </iframe>
+</section>
+<section id="project-description" class="level2">
+<h2 class="anchored" data-anchor-id="project-description">Project Description</h2>
+<section id="dataset" class="level3">
+<h3 class="anchored" data-anchor-id="dataset">Dataset</h3>
+<p>The dataset provided for the project focused on lung cancer patients, with <code>SurvTime</code> as the primary response variable, representing survival time in days. Key covariates included:</p>
+<ul>
+<li><code>Cell</code>: Type of cancer cell</li>
+<li><code>Therapy</code>: Type of therapy (standard or test)</li>
+<li><code>Prior</code>: Prior therapy status (0 for no, 10 for yes)</li>
+<li><code>Age</code>: Age in years</li>
+<li><code>DiagTime</code>: Time in months from diagnosis to trial entry</li>
+<li><code>Kps</code>: Performance status</li>
+</ul>
+<p>A censoring indicator variable was also included to distinguish between censored and event times. The dataset required transformation and preparation for analysis, aligning with clinical research standards.</p>
+</section>
+<section id="exercises-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exercises-and-analysis">Exercises and Analysis</h3>
+<p>The project required solving six exercises, each designed to assess different analytical skills:</p>
+<ol type="1">
+<li><strong>Maximum Survival Time for Adeno Cell Type:</strong> Identifying the longest survival time for the adeno cell type.</li>
+<li><strong>Average Age of Subjects:</strong> Calculating the mean age of study participants.</li>
+<li><strong>Cell Type Frequency:</strong> Determining which cell type appeared most frequently.</li>
+<li><strong>Descriptive Statistics:</strong> Generating descriptive statistics for all numeric variables.</li>
+<li><strong>Survival Analysis:</strong> Performing survival analysis using Kaplan-Meier curves and Cox regression.</li>
+<li><strong>Multivariable Analysis:</strong> Analyzing the effect of age on hazard ratios across different cancerous cells.</li>
+</ol>
+</section>
+<section id="methodology-and-tools" class="level3">
+<h3 class="anchored" data-anchor-id="methodology-and-tools">Methodology and Tools</h3>
+<p>The analysis involved utilizing a variety of R packages for data cleaning, statistical analysis, and visualization, including <code>tidyverse</code>, <code>survival</code>, and <code>ggsurvfit</code>. The project was presented using <code>revealjs</code> for interactive slides, showcasing the statistical findings and interpretations.</p>
+</section>
 </section>
 <section id="slides-in-pdf" class="level2">
 <h2 class="anchored" data-anchor-id="slides-in-pdf">Slides in PDF</h2>
@@ -43,6 +76,38 @@
   <guid>https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/</guid>
   <pubDate>Sun, 09 Mar 2025 23:00:00 GMT</pubDate>
   <media:content url="https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/logo.png" medium="image" type="image/png" height="71" width="144"/>
+</item>
+<item>
+  <title>Life Insurance Dashboard</title>
+  <link>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://erikdeluca.shinyapps.io/Life-Insurance-Portfolio-Dashboard/" class="btn" target="_blank"><i class="fa-brands fa-r-project" aria-label="r-project"></i> shiny dashboard</a> <a href="https://github.com/erikdeluca/Portafoglio-assicurazioni-vita" class="btn" target="_blank"><i class="fa-brands fa-github" aria-label="github"></i> source code</a></p>
+<p><br></p>
+<p>This project introduces a Shiny app developed in R, originally crafted in 2020 for a university exam to manage and visualize a homogeneous life insurance portfolio.</p>
+<p>The app allows users to manipulate parameters such as age, premium rates, and mortality tables, providing insights into portfolio performance and risk management.</p>
+<p>In 2023, the project underwent enhancements with improved graphics and function optimization. Further developments in 2025 saw its integration into a comprehensive dashboard using Quarto and Shiny, enriching the user experience and interaction.</p>
+<!-- While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates. -->
+<!-- # Motivation -->
+<!-- It doesn't get much better than playing around with data that mean a lot to you. For me, that's my Strava data (yes, I do recognize that that might sound a bit silly) -- I'm fortunate enough to have near-immediate access to some of the greatest hiking trails around (yes, I also recognize that I'm totally biased), and spending my free time romping around our local mountains has been so important for my mental health. *So,* when I was ready to do my first real deep-dive into learning how to build Shiny apps and dashboards, I knew these were the data I needed to use. -->
+<!-- # What's on the dashboard? -->
+<!-- This is very much an ongoing work in-progress, but the first version included a "Gear Garage" for tracking mileage on my hiking boots and bike, an activity heat map of all recorded hikes, bike rides, and walks, visualizations for exploring activity distance and elevation gain, and an interactive table of the raw data. -->
+<!-- There are many more visualizations and features I'd love to add (but have been severely lacking the time to do so). I also still manually retrieve new activities using the Strava API via the [`{rStrava}` package](https://github.com/fawda123/rStrava), but I hope to automate this in the next version. Stay tuned! -->
+<p><br></p>
+<p><img class="img-styling" src="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" alt="Shiny dashboard" width="70%"></p>
+
+
+
+ ]]></description>
+  <category>Shiny</category>
+  <category>Life Insurance</category>
+  <category>Actuarial Science</category>
+  <guid>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</guid>
+  <pubDate>Sun, 16 Feb 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 <item>
   <title>Statistical Analysis of Urban Waste</title>
@@ -7497,38 +7562,6 @@ font-style: inherit;">ggplotly</span>(p)</span></code></pre></div>
   <guid>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/</guid>
   <pubDate>Sat, 14 Oct 2023 22:00:00 GMT</pubDate>
   <media:content url="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/logo_MIPC_Asset_Allocator.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Life Insurance Dashboard</title>
-  <link>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://erikdeluca.shinyapps.io/Life-Insurance-Portfolio-Dashboard/" class="btn" target="_blank"><i class="fa-brands fa-r-project" aria-label="r-project"></i> shiny dashboard</a> <a href="https://github.com/erikdeluca/Portafoglio-assicurazioni-vita" class="btn" target="_blank"><i class="fa-brands fa-github" aria-label="github"></i> source code</a></p>
-<p><br></p>
-<p>This project introduces a Shiny app developed in R, originally crafted in 2020 for a university exam to manage and visualize a homogeneous life insurance portfolio.</p>
-<p>The app allows users to manipulate parameters such as age, premium rates, and mortality tables, providing insights into portfolio performance and risk management.</p>
-<p>In 2023, the project underwent enhancements with improved graphics and function optimization. Further developments in 2025 saw its integration into a comprehensive dashboard using Quarto and Shiny, enriching the user experience and interaction.</p>
-<!-- While still in development, the app is a valuable educational tool, currently available only in Italian, with plans to broaden its accessibility and features in future updates. -->
-<!-- # Motivation -->
-<!-- It doesn't get much better than playing around with data that mean a lot to you. For me, that's my Strava data (yes, I do recognize that that might sound a bit silly) -- I'm fortunate enough to have near-immediate access to some of the greatest hiking trails around (yes, I also recognize that I'm totally biased), and spending my free time romping around our local mountains has been so important for my mental health. *So,* when I was ready to do my first real deep-dive into learning how to build Shiny apps and dashboards, I knew these were the data I needed to use. -->
-<!-- # What's on the dashboard? -->
-<!-- This is very much an ongoing work in-progress, but the first version included a "Gear Garage" for tracking mileage on my hiking boots and bike, an activity heat map of all recorded hikes, bike rides, and walks, visualizations for exploring activity distance and elevation gain, and an interactive table of the raw data. -->
-<!-- There are many more visualizations and features I'd love to add (but have been severely lacking the time to do so). I also still manually retrieve new activities using the Strava API via the [`{rStrava}` package](https://github.com/fawda123/rStrava), but I hope to automate this in the next version. Stay tuned! -->
-<p><br></p>
-<p><img class="img-styling" src="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" alt="Shiny dashboard" width="70%"></p>
-
-
-
- ]]></description>
-  <category>Shiny</category>
-  <category>Life Insurance</category>
-  <category>Actuarial Science</category>
-  <guid>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</guid>
-  <pubDate>Sat, 28 Aug 2021 22:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 </channel>
 </rss>
