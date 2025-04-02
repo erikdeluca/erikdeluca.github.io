@@ -14,7 +14,6 @@ comments:
     category-id: DIC_kwDONcJGas4Cmzjk
     reactions-enabled: true
     mapping: pathname
-draft: true
 ---
 
 [{{< fa newspaper >}} ESPRIT Project](https://www.progettoesprit.it/){.btn target="_blank"}

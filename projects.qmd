@@ -4,10 +4,12 @@ subtitle: Some projects where I have worked on
 listing:
   contents: projects
   feed: true
-  sort: "date desc"
+  # sort: ["date-modified desc", "date desc"]
+  sort: [date desc]
   type: grid
   max-description-length: 175
   date-format: medium
+  # categories: cloud
   categories: numbered
   sort-ui: false
   filter-ui: false

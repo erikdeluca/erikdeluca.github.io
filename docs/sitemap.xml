@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://erikdeluca.github.io/talks/02-2025-Presentazione-ESPRIT/index.html</loc>
-    <lastmod>2025-03-25T09:24:35.892Z</lastmod>
-  </url>
-  <url>
     <loc>https://erikdeluca.github.io/publications/2025-02-24 HPV t zero/index.html</loc>
     <lastmod>2025-03-25T09:24:36.255Z</lastmod>
   </url>
@@ -30,7 +26,7 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/index.html</loc>
-    <lastmod>2025-03-25T09:24:35.797Z</lastmod>
+    <lastmod>2025-04-02T12:25:40.068Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index.html</loc>
@@ -38,7 +34,7 @@
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects.html</loc>
-    <lastmod>2025-04-02T12:03:28.983Z</lastmod>
+    <lastmod>2025-04-02T12:30:14.550Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/publications.html</loc>
@@ -47,5 +43,9 @@
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/index.html</loc>
     <lastmod>2025-04-02T12:00:08.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/talks/02-2025-Presentazione-ESPRIT/index.html</loc>
+    <lastmod>2025-04-02T12:12:43.566Z</lastmod>
   </url>
 </urlset>

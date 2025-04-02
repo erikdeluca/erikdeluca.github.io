@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html",
-    "href": "talks/02-2025-Presentazione-ESPRIT/index.html",
-    "title": "HPV and STI Prevention Begins at School",
-    "section": "",
-    "text": "ESPRIT Project"
-  },
-  {
-    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#about",
-    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#about",
-    "title": "HPV and STI Prevention Begins at School",
-    "section": "About",
-    "text": "About\nThis project, part of the ESPRIT initiative, focuses on assessing and improving the knowledge of HPV and STDs among adolescents in Italy. Conducted in collaboration with the Health Authority, the study surveyed 598 students from lower and upper secondary schools across three Italian regions. The aim was to evaluate their awareness, knowledge, and vaccination practices regarding HPV to address misconceptions and improve public health outcomes.\nOur recent publication, “Knowledge About HPV and the HPV Vaccine: Observational Study on a Convenience Sample of Adolescents from Select Schools in Three Regions in Italy”, underscores significant gaps in knowledge and highlights the need for coordinated national strategies to enhance awareness and increase HPV vaccination rates. The findings reveal that while awareness is low, there is a critical need to address these public health issues through targeted educational interventions.\nDuring the conference to present the first phase of the project, I presented the preliminary data on the students’ knowledge and attitudes.\nBelow, you can see my presentation and the event flyer. More details about the event are available on the project website."
-  },
-  {
-    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#slides",
-    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#slides",
-    "title": "HPV and STI Prevention Begins at School",
-    "section": "Slides",
-    "text": "Slides\nDownload PDF file."
-  },
-  {
-    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#flyer",
-    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#flyer",
-    "title": "HPV and STI Prevention Begins at School",
-    "section": "Flyer",
-    "text": "Flyer\nDownload PDF file."
-  },
-  {
     "objectID": "publications/2025-02-24 HPV t zero/index.html",
     "href": "publications/2025-02-24 HPV t zero/index.html",
     "title": "Knowledge About HPV and the HPV Vaccine",
@@ -221,7 +193,7 @@
     "href": "publications.html#talks",
     "title": "Publications and Talks",
     "section": "Talks",
-    "text": "Talks\n\n\n\n\n\nNo matching items"
+    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nHPV and STI Prevention Begins at School\n\n\nPreliminary Data from Pre-Intervention Evaluation in Secondary Schools\n\n\nThis project evaluates adolescent knowledge about HPV and STDs, highlighting gaps in awareness and vaccination practices. \n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/2025-03-10_Biostatistician_Interview/index.html",
@@ -271,5 +243,33 @@
     "title": "Biostatistician Interview",
     "section": "Project Description",
     "text": "Project Description\n\nDataset\nThe dataset provided for the project focused on lung cancer patients, with SurvTime as the primary response variable, representing survival time in days. Key covariates included:\n\nCell: Type of cancer cell\nTherapy: Type of therapy (standard or test)\nPrior: Prior therapy status (0 for no, 10 for yes)\nAge: Age in years\nDiagTime: Time in months from diagnosis to trial entry\nKps: Performance status\n\nA censoring indicator variable was also included to distinguish between censored and event times. The dataset required transformation and preparation for analysis, aligning with clinical research standards.\n\n\nExercises and Analysis\nThe project required solving six exercises, each designed to assess different analytical skills:\n\nMaximum Survival Time for Adeno Cell Type: Identifying the longest survival time for the adeno cell type.\nAverage Age of Subjects: Calculating the mean age of study participants.\nCell Type Frequency: Determining which cell type appeared most frequently.\nDescriptive Statistics: Generating descriptive statistics for all numeric variables.\nSurvival Analysis: Performing survival analysis using Kaplan-Meier curves and Cox regression.\nMultivariable Analysis: Analyzing the effect of age on hazard ratios across different cancerous cells.\n\n\n\nMethodology and Tools\nThe analysis involved utilizing a variety of R packages for data cleaning, statistical analysis, and visualization, including tidyverse, survival, and ggsurvfit. The project was presented using revealjs for interactive slides, showcasing the statistical findings and interpretations."
+  },
+  {
+    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html",
+    "href": "talks/02-2025-Presentazione-ESPRIT/index.html",
+    "title": "HPV and STI Prevention Begins at School",
+    "section": "",
+    "text": "ESPRIT Project"
+  },
+  {
+    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#about",
+    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#about",
+    "title": "HPV and STI Prevention Begins at School",
+    "section": "About",
+    "text": "About\nThis project, part of the ESPRIT initiative, focuses on assessing and improving the knowledge of HPV and STDs among adolescents in Italy. Conducted in collaboration with the Health Authority, the study surveyed 598 students from lower and upper secondary schools across three Italian regions. The aim was to evaluate their awareness, knowledge, and vaccination practices regarding HPV to address misconceptions and improve public health outcomes.\nOur recent publication, “Knowledge About HPV and the HPV Vaccine: Observational Study on a Convenience Sample of Adolescents from Select Schools in Three Regions in Italy”, underscores significant gaps in knowledge and highlights the need for coordinated national strategies to enhance awareness and increase HPV vaccination rates. The findings reveal that while awareness is low, there is a critical need to address these public health issues through targeted educational interventions.\nDuring the conference to present the first phase of the project, I presented the preliminary data on the students’ knowledge and attitudes.\nBelow, you can see my presentation and the event flyer. More details about the event are available on the project website."
+  },
+  {
+    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#slides",
+    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#slides",
+    "title": "HPV and STI Prevention Begins at School",
+    "section": "Slides",
+    "text": "Slides\nDownload PDF file."
+  },
+  {
+    "objectID": "talks/02-2025-Presentazione-ESPRIT/index.html#flyer",
+    "href": "talks/02-2025-Presentazione-ESPRIT/index.html#flyer",
+    "title": "HPV and STI Prevention Begins at School",
+    "section": "Flyer",
+    "text": "Flyer\nDownload PDF file."
   }
 ]
