@@ -1,0 +1,51 @@
+---
+title: |
+  ESPRIT Study - Analysis of Pre-Intervention Survey Results
+subtitle: |
+  Understanding Adolescents' Knowledge on STIs in Italy
+description: |
+  Insights into the effectiveness of peer education on STI awareness among Italian adolescents.
+date: 2024-10-28
+categories: [Public Health, Adolescent Education, STI Awareness]
+image: punteggio_Regione_Secondaria di secondo grado.png
+comments:
+  giscus:
+    repo: erikdeluca/erikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
+bibliography: references.bib
+---
+
+[{{< fa newspaper >}} European Journal of Public Health](https://doi.org/10.1093/eurpub/ckae144.1912){.btn target="_blank"}
+
+## About This Study
+
+This study is part of the [ESPRIT project](https://www.progettoesprit.it/), focusing on the awareness and attitudes of Italian adolescents towards sexually transmitted infections (STIs) and the effectiveness of peer education interventions.
+
+I contributed significantly to the quantitative analysis, utilizing tools such as the Kruskal-Wallis test to uncover gender and educational differences in STI knowledge. We found notable disparities in understanding between different demographics, highlighting areas for future educational interventions. [@10.1093/eurpub/ckae144.1912]
+
+For those interested in public health and adolescent education, here is the full article [here](https://doi.org/10.1093/eurpub/ckae144.1912).
+
+## My Contributions
+
+### Quantitative Analysis
+
+In this study, I performed a robust quantitative analysis using R. Key packages included `tidyverse` for data manipulation, `ggplot2` and `ggstatsplot` for data visualization, `gt` and `gtsummary` for summarizing statistical results. The analysis focused on sociodemographic data, considering variables such as school type, gender, and region. For statistical analysis, a combination of Kruskal-Wallis test for non-parametric data and linear regression models were applied to identify significant differences in STI knowledge across different groups. The data processing involved handling missing values, creating custom color palettes for visualization, and generating comprehensive tables to summarize findings.
+
+![](table_superiori.png){width=500px fig-align="center"}
+
+### Data Visualization
+
+Custom visualizations were created to effectively communicate the results. These included bar plots and histograms to depict the distribution of survey responses, as well as tile plots to compare subgroup performances. A key focus was on making the visualizations intuitive and engaging, using custom color palettes to align with the project's branding.
+
+![](18_Secondaria di secondo grado.png){width=550px fig-align="right"}
+
+![](punteggio_Regione_Secondaria di secondo grado.png){width=550px fig-align="center"}
+
+
+## PDF
+
+{{< pdf paper.pdf width=100% height=600 >}}

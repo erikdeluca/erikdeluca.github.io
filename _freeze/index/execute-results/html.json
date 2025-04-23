@@ -1,0 +1,19 @@
+{
+  "hash": "57a413b0d31d4d911864f05dbed15318",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Erik De Luca\"\nimage: media/foto_profilo_az.jpg\n2toc: false\nabout: \n  template: jolla\n  image-shape: round\n  image-width: 18em\n  links:\n    - text: LinkedIn\n      icon: linkedin\n      href: https://www.linkedin.com/in/erikdeluca/\n      target: _blank\n    - text: GitHub\n      icon: github\n      href: https://github.com/erikdeluca\n      target: _blank\n    - text: Email\n      icon: envelope\n      href: mailto:erikdeluca@gmail.com\n      target: _blank\n    - text: Resume\n      icon: file-pdf\n      href: https://github.com/erikdeluca/erikdeluca.github.io/blob/master/media/CV_ENG_Biostatistician_DS_02_25.pdf\n      target: _blank\n---\n\nHello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics {{< fa chart-line >}} and actuarial techniques, I have a keen interest in quantitative finance {{< fa money-bill-wave >}}, portfolio optimization {{< fa chart-pie >}}, and public health analytics {{< fa heartbeat >}}. When not immersed in numbers, I indulge in travel {{< fa plane >}}, craft beer brewing {{< fa beer >}}, and judo {{< fa user-ninja >}}. Welcome to my corner of the web!\n\n\n::: {.cell}\n\n```{.r .cell-code}\nprint(\"test\")\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"test\"\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
