@@ -26,7 +26,3 @@ about:
 ---
 
 Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics {{< fa chart-line >}} and actuarial techniques, I have a keen interest in quantitative finance {{< fa money-bill-wave >}}, portfolio optimization {{< fa chart-pie >}}, and public health analytics {{< fa heartbeat >}}. When not immersed in numbers, I indulge in travel {{< fa plane >}}, craft beer brewing {{< fa beer >}}, and judo {{< fa user-ninja >}}. Welcome to my corner of the web!
-
-```{r}
-print("test")
-```
