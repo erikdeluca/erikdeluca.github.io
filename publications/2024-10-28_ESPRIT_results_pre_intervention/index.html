@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-03-10">
-<meta name="description" content="Analyzing a dataset related to lung cancer patients to demonstrate my skills in data analysis and statistical modeling">
+<meta name="dcterms.date" content="2024-10-28">
+<meta name="description" content="Insights into the effectiveness of peer education on STI awareness among Italian adolescents.">
 
-<title>Biostatistician Interview – Erik De Luca</title>
+<title>ESPRIT Study - Analysis of Pre-Intervention Survey Results – Erik De Luca</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -102,12 +122,12 @@ cookieconsent.run({
   
 
 
-<meta property="og:title" content="Biostatistician Interview – Erik De Luca">
-<meta property="og:description" content="Analyzing a dataset related to lung cancer patients to demonstrate my skills in data analysis and statistical modeling">
-<meta property="og:image" content="https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/logo.png">
+<meta property="og:title" content="ESPRIT Study - Analysis of Pre-Intervention Survey Results – Erik De Luca">
+<meta property="og:description" content="Insights into the effectiveness of peer education on STI awareness among Italian adolescents.">
+<meta property="og:image" content="https://erikdeluca.github.io/publications/2024-10-28_ESPRIT_results_pre_intervention/punteggio_Regione_Secondaria di secondo grado.png">
 <meta property="og:site_name" content="Erik De Luca">
-<meta property="og:image:height" content="829">
-<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="1500">
+<meta property="og:image:width" content="1800">
 </head>
 
 <body class="nav-fixed">
@@ -159,15 +179,13 @@ cookieconsent.run({
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#interactive-slides" id="toc-interactive-slides" class="nav-link" data-scroll-target="#interactive-slides">Interactive Slides</a></li>
-  <li><a href="#project-description" id="toc-project-description" class="nav-link" data-scroll-target="#project-description">Project Description</a>
+  <li><a href="#about-this-study" id="toc-about-this-study" class="nav-link active" data-scroll-target="#about-this-study">About This Study</a></li>
+  <li><a href="#my-contributions" id="toc-my-contributions" class="nav-link" data-scroll-target="#my-contributions">My Contributions</a>
   <ul class="collapse">
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
-  <li><a href="#exercises-and-analysis" id="toc-exercises-and-analysis" class="nav-link" data-scroll-target="#exercises-and-analysis">Exercises and Analysis</a></li>
-  <li><a href="#methodology-and-tools" id="toc-methodology-and-tools" class="nav-link" data-scroll-target="#methodology-and-tools">Methodology and Tools</a></li>
+  <li><a href="#quantitative-analysis" id="toc-quantitative-analysis" class="nav-link" data-scroll-target="#quantitative-analysis">Quantitative Analysis</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
   </ul></li>
-  <li><a href="#slides-in-pdf" id="toc-slides-in-pdf" class="nav-link" data-scroll-target="#slides-in-pdf">Slides in PDF</a></li>
+  <li><a href="#pdf" id="toc-pdf" class="nav-link" data-scroll-target="#pdf">PDF</a></li>
   </ul>
 </nav>
     </div>
@@ -176,19 +194,18 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Biostatistician Interview</h1>
-<p class="subtitle lead">Analysis of an oncological dataset</p>
+<h1 class="title"><p>ESPRIT Study - Analysis of Pre-Intervention Survey Results</p></h1>
+<p class="subtitle lead"></p><p>Understanding Adolescents’ Knowledge on STIs in Italy</p><p></p>
   <div class="quarto-categories">
-    <div class="quarto-category">Biostatistics</div>
-    <div class="quarto-category">Survival Analysis</div>
-    <div class="quarto-category">Interview</div>
-    <div class="quarto-category">Revealjs</div>
+    <div class="quarto-category">Public Health</div>
+    <div class="quarto-category">Adolescent Education</div>
+    <div class="quarto-category">STI Awareness</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>Analyzing a dataset related to lung cancer patients to demonstrate my skills in data analysis and statistical modeling</p>
+    <p>Insights into the effectiveness of peer education on STI awareness among Italian adolescents.</p>
   </div>
 </div>
 
@@ -199,7 +216,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 10, 2025</p>
+      <p class="date">October 28, 2024</p>
     </div>
   </div>
   
@@ -211,56 +228,52 @@ cookieconsent.run({
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This article provides an overview of the technical project I completed as part of a biostatistician interview process. The assignment involved analyzing an oncology dataset using R, with the objective of demonstrating statistical and analytical skills through a series of exercises. Although I did not secure the position, the feedback received has been invaluable for my professional growth in the field of clinical trial statistics.</p>
+<p><a href="https://doi.org/10.1093/eurpub/ckae144.1912" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> European Journal of Public Health</a></p>
+<section id="about-this-study" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-study">About This Study</h2>
+<p>This study is part of the <a href="https://www.progettoesprit.it/">ESPRIT project</a>, focusing on the awareness and attitudes of Italian adolescents towards sexually transmitted infections (STIs) and the effectiveness of peer education interventions.</p>
+<p>I contributed significantly to the quantitative analysis, utilizing tools such as the Kruskal-Wallis test to uncover gender and educational differences in STI knowledge. We found notable disparities in understanding between different demographics, highlighting areas for future educational interventions. <span class="citation" data-cites="10.1093/eurpub/ckae144.1912">(<a href="#ref-10.1093/eurpub/ckae144.1912" role="doc-biblioref">Gazzetta et al. 2024</a>)</span></p>
+<p>For those interested in public health and adolescent education, here is the full article <a href="https://doi.org/10.1093/eurpub/ckae144.1912">here</a>.</p>
 </section>
-<section id="interactive-slides" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-slides">Interactive Slides</h2>
-<p><a href="akkodis interview.html#/title-slide" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> Full Screen Slides</a></p>
-<iframe src="akkodis interview.html#/title-slide" width="100%" height="600px">
-</iframe>
+<section id="my-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="my-contributions">My Contributions</h2>
+<section id="quantitative-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="quantitative-analysis">Quantitative Analysis</h3>
+<p>In this study, I performed a robust quantitative analysis using R. Key packages included <code>tidyverse</code> for data manipulation, <code>ggplot2</code> and <code>ggstatsplot</code> for data visualization, <code>gt</code> and <code>gtsummary</code> for summarizing statistical results. The analysis focused on sociodemographic data, considering variables such as school type, gender, and region. For statistical analysis, a combination of Kruskal-Wallis test for non-parametric data and linear regression models were applied to identify significant differences in STI knowledge across different groups. The data processing involved handling missing values, creating custom color palettes for visualization, and generating comprehensive tables to summarize findings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="table_superiori.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
 </section>
-<section id="project-description" class="level2">
-<h2 class="anchored" data-anchor-id="project-description">Project Description</h2>
-<section id="dataset" class="level3">
-<h3 class="anchored" data-anchor-id="dataset">Dataset</h3>
-<p>The dataset provided for the project focused on lung cancer patients, with <code>SurvTime</code> as the primary response variable, representing survival time in days. Key covariates included:</p>
-<ul>
-<li><code>Cell</code>: Type of cancer cell</li>
-<li><code>Therapy</code>: Type of therapy (standard or test)</li>
-<li><code>Prior</code>: Prior therapy status (0 for no, 10 for yes)</li>
-<li><code>Age</code>: Age in years</li>
-<li><code>DiagTime</code>: Time in months from diagnosis to trial entry</li>
-<li><code>Kps</code>: Performance status</li>
-</ul>
-<p>A censoring indicator variable was also included to distinguish between censored and event times. The dataset required transformation and preparation for analysis, aligning with clinical research standards.</p>
-</section>
-<section id="exercises-and-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="exercises-and-analysis">Exercises and Analysis</h3>
-<p>The project required solving six exercises, each designed to assess different analytical skills:</p>
-<ol type="1">
-<li><strong>Maximum Survival Time for Adeno Cell Type:</strong> Identifying the longest survival time for the adeno cell type.</li>
-<li><strong>Average Age of Subjects:</strong> Calculating the mean age of study participants.</li>
-<li><strong>Cell Type Frequency:</strong> Determining which cell type appeared most frequently.</li>
-<li><strong>Descriptive Statistics:</strong> Generating descriptive statistics for all numeric variables.</li>
-<li><strong>Survival Analysis:</strong> Performing survival analysis using Kaplan-Meier curves and Cox regression.</li>
-<li><strong>Multivariable Analysis:</strong> Analyzing the effect of age on hazard ratios across different cancerous cells.</li>
-</ol>
-</section>
-<section id="methodology-and-tools" class="level3">
-<h3 class="anchored" data-anchor-id="methodology-and-tools">Methodology and Tools</h3>
-<p>The analysis involved utilizing a variety of R packages for data cleaning, statistical analysis, and visualization, including <code>tidyverse</code>, <code>survival</code>, and <code>ggsurvfit</code>. The project was presented using <code>revealjs</code> for interactive slides, showcasing the statistical findings and interpretations.</p>
+<section id="data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<p>Custom visualizations were created to effectively communicate the results. These included bar plots and histograms to depict the distribution of survey responses, as well as tile plots to compare subgroup performances. A key focus was on making the visualizations intuitive and engaging, using custom color palettes to align with the project’s branding.</p>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="18_Secondaria di secondo grado.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="550"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="punteggio_Regione_Secondaria di secondo grado.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="550"></p>
+</figure>
+</div>
 </section>
 </section>
-<section id="slides-in-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="slides-in-pdf">Slides in PDF</h2>
-<p><object data="Biostatistician-interview.pdf" type="application/pdf" width="100%" height="600"><a href="Biostatistician-interview.pdf" download="">Download PDF file.</a></object></p>
+<section id="pdf" class="level2">
+<h2 class="anchored" data-anchor-id="pdf">PDF</h2>
+<p><object data="paper.pdf" type="application/pdf" width="100%" height="600"><a href="paper.pdf" download="">Download PDF file.</a></object></p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-10.1093/eurpub/ckae144.1912" class="csl-entry" role="listitem">
+Gazzetta, S, L Brunelli, M Comar, B Suligoi, M C Salfa, D Gianfrilli, F Sesti, A Casuccio, P Ferro, and ESPRIT study collaboration group. 2024. <span>“ESPRIT Study, Analysis of the Results of the Pre-Intervention Survey in Upper Secondary Schools.”</span> <em>European Journal of Public Health</em> 34 (Supplement_3): ckae144.1912. <a href="https://doi.org/10.1093/eurpub/ckae144.1912">https://doi.org/10.1093/eurpub/ckae144.1912</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -678,7 +691,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="erikdeluca/erpikdeluca.github.io" data-repo-id="R_kgDONcJGag" data-category="Announcements" data-category-id="DIC_kwDONcJGas4Cmzjk" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+<script src="https://giscus.app/client.js" data-repo="erikdeluca/erikdeluca.github.io" data-repo-id="R_kgDONcJGag" data-category="Announcements" data-category-id="DIC_kwDONcJGas4Cmzjk" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 <input type="hidden" id="giscus-base-theme" value="light">
 <input type="hidden" id="giscus-alt-theme" value="dark">
