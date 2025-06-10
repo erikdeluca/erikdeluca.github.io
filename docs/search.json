@@ -123,7 +123,7 @@
     "href": "index.html",
     "title": "Erik De Luca",
     "section": "",
-    "text": "Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics  and actuarial techniques, I have a keen interest in quantitative finance , portfolio optimization , and public health analytics . When not immersed in numbers, I indulge in travel , craft beer brewing , and judo . Welcome to my corner of the web!\n\n\nCode\nprint(\"test\")\n\n\n[1] \"test\""
+    "text": "Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics  and actuarial techniques, I have a keen interest in quantitative finance , portfolio optimization , and public health analytics . When not immersed in numbers, I indulge in travel , craft beer brewing , and judo . Welcome to my corner of the web!"
   },
   {
     "objectID": "projects/2021-08-29_Dashboard_Life_Insurances/index.html",
@@ -193,7 +193,7 @@
     "href": "publications.html#talks",
     "title": "Publications and Talks",
     "section": "Talks",
-    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nHPV and STI Prevention Begins at School\n\n\nPreliminary Data from Pre-Intervention Evaluation in Secondary Schools\n\n\nThis project evaluates adolescent knowledge about HPV and STDs, highlighting gaps in awareness and vaccination practices.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Talks\n\n\n\n\n\n\n\n\n\n\nPresentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools\n\n\nPreliminary Data and Outcomes from the ESPRIT Project\n\n\nOn May 26, 2025, I presented results from almost two years of work at the Istituto Superiore di Sanità in Rome, focusing on pre- and post-intervention data regarding HPV and STI knowledge among…\n\n\n\n\n\nMay 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHPV and STI Prevention Begins at School\n\n\nPreliminary Data from Pre-Intervention Evaluation in Secondary Schools\n\n\nThis project evaluates adolescent knowledge about HPV and STDs, highlighting gaps in awareness and vaccination practices.\n\n\n\n\n\nFeb 28, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/2025-03-10_Biostatistician_Interview/index.html",
@@ -306,5 +306,40 @@
     "title": "ESPRIT Study - Analysis of Pre-Intervention Survey Results",
     "section": "PDF",
     "text": "PDF\nDownload PDF file."
+  },
+  {
+    "objectID": "talks/05-2025-Presentazione-ISS/index.html",
+    "href": "talks/05-2025-Presentazione-ISS/index.html",
+    "title": "Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools",
+    "section": "",
+    "text": "ESPRIT Project"
+  },
+  {
+    "objectID": "talks/05-2025-Presentazione-ISS/index.html#presentation-at-iss",
+    "href": "talks/05-2025-Presentazione-ISS/index.html#presentation-at-iss",
+    "title": "Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools",
+    "section": "Presentation at ISS",
+    "text": "Presentation at ISS\nOn May 26, 2025, I took part as a speaker at the Istituto Superiore di Sanità (ISS) in Rome, during the event “Education, Prevention, and Health: How Schools Can Promote Adolescent Health and Prevent HPV and STIs.”\nI presented findings from the ESPRIT project, which evaluated knowledge and attitudes towards HPV and vaccination among secondary school students in three Italian regions. The results highlighted ongoing challenges and areas for improvement in sexual health education and prevention strategies."
+  },
+  {
+    "objectID": "talks/05-2025-Presentazione-ISS/index.html#key-points",
+    "href": "talks/05-2025-Presentazione-ISS/index.html#key-points",
+    "title": "Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools",
+    "section": "Key Points",
+    "text": "Key Points\nSexually transmitted infections, including HPV, continue to be a significant public health topic for adolescents. The data collected show notable gaps in awareness and vaccination coverage, underlining the importance of further educational interventions in school settings."
+  },
+  {
+    "objectID": "talks/05-2025-Presentazione-ISS/index.html#slides",
+    "href": "talks/05-2025-Presentazione-ISS/index.html#slides",
+    "title": "Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools",
+    "section": "Slides",
+    "text": "Slides\nDownload PDF file."
+  },
+  {
+    "objectID": "talks/05-2025-Presentazione-ISS/index.html#flyer",
+    "href": "talks/05-2025-Presentazione-ISS/index.html#flyer",
+    "title": "Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools",
+    "section": "Flyer",
+    "text": "Flyer\nDownload PDF file."
   }
 ]

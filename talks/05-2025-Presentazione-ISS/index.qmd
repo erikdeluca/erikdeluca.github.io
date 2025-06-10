@@ -1,0 +1,37 @@
+---
+title: Presentation at the Istituto Superiore di Sanità – HPV and Prevention in Schools  
+subtitle: Preliminary Data and Outcomes from the ESPRIT Project  
+description: |
+  On May 26, 2025, I presented results from almost two years of work at the Istituto Superiore di Sanità in Rome, focusing on pre- and post-intervention data regarding HPV and STI knowledge among secondary school students. The data contribute to current discussions on public health, adolescent education, and preventive strategies.
+date: 2025-05-26  
+categories: [Public Health, Biostatistics, HPV, Conference, Education]  
+image: iss-talk.png  
+comments:
+  giscus:
+    repo: erikdeluca/erikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
+---
+
+[{{< fa newspaper >}} ESPRIT Project](https://www.progettoesprit.it/){.btn target="_blank"}
+
+## Presentation at ISS
+
+On May 26, 2025, I took part as a speaker at the Istituto Superiore di Sanità (ISS) in Rome, during the event “Education, Prevention, and Health: How Schools Can Promote Adolescent Health and Prevent HPV and STIs.”
+
+I presented findings from the ESPRIT project, which evaluated knowledge and attitudes towards HPV and vaccination among secondary school students in three Italian regions. The results highlighted ongoing challenges and areas for improvement in sexual health education and prevention strategies.
+
+## Key Points
+
+Sexually transmitted infections, including HPV, continue to be a significant public health topic for adolescents. The data collected show notable gaps in awareness and vaccination coverage, underlining the importance of further educational interventions in school settings.
+
+## Slides
+
+{{< pdf presentation-iss-2025.pdf width=100% height=600 >}}
+
+## Flyer
+
+{{< pdf event-program-iss.pdf width=100% height=600 >}}
