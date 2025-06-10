@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.847Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.842Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.849Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/publications.html</loc>
-    <lastmod>2025-04-23T10:23:02.956Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/about.html</loc>
-    <lastmod>2025-04-23T10:23:02.633Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/talks/02-2025-Presentazione-ESPRIT/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.969Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/publications/2024-10-28_ESPRIT_results_pre_intervention/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.957Z</lastmod>
-  </url>
-  <url>
     <loc>https://erikdeluca.github.io/publications/2025-02-24 HPV t zero/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.959Z</lastmod>
-  </url>
-  <url>
-    <loc>https://erikdeluca.github.io/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.835Z</lastmod>
+    <lastmod>2025-06-10T07:44:54.048Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/LICENSE.html</loc>
-    <lastmod>2025-04-23T10:23:02.577Z</lastmod>
+    <lastmod>2025-06-10T07:44:53.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/talks/05-2025-Presentazione-ISS/index.html</loc>
+    <lastmod>2025-06-10T07:44:54.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/publications.html</loc>
+    <lastmod>2025-06-10T07:44:54.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/index.html</loc>
+    <lastmod>2025-06-10T07:44:53.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index.html</loc>
+    <lastmod>2025-06-10T07:44:53.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/about.html</loc>
+    <lastmod>2025-06-10T07:44:53.712Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects.html</loc>
-    <lastmod>2025-04-23T10:23:02.842Z</lastmod>
+    <lastmod>2025-06-10T07:44:53.931Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.955Z</lastmod>
+    <lastmod>2025-06-10T07:44:54.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index.html</loc>
+    <lastmod>2025-06-10T07:44:53.938Z</lastmod>
   </url>
   <url>
     <loc>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/index.html</loc>
-    <lastmod>2025-04-23T10:23:02.878Z</lastmod>
+    <lastmod>2025-06-10T07:44:53.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/talks/02-2025-Presentazione-ESPRIT/index.html</loc>
+    <lastmod>2025-06-10T07:44:54.058Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/index.html</loc>
+    <lastmod>2025-06-10T07:44:53.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://erikdeluca.github.io/publications/2024-10-28_ESPRIT_results_pre_intervention/index.html</loc>
+    <lastmod>2025-06-10T07:44:54.046Z</lastmod>
   </url>
 </urlset>
