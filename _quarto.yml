@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Erik De Luca"
+  description: "Erik De Luca's personal website. It contains talks, posts and info about a data scientist involved into insurance and biostatistics fields"
+  site-url: https://erikdeluca.it
   favicon: "media/logo_3_0.png"
   navbar:
     title: false
@@ -35,7 +37,6 @@ website:
   google-analytics:
     tracking-id: G-X7MSMF2M7M
     anonymize-ip: true
-  site-url: https://erikdeluca.github.io
   # for sharing links  of my website
   open-graph: true
 
