@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Erik De Luca</title>
-<link>https://erikdeluca.github.io/projects.html</link>
-<atom:link href="https://erikdeluca.github.io/projects.xml" rel="self" type="application/rss+xml"/>
-<description></description>
+<link>https://erikdeluca.it/projects.html</link>
+<atom:link href="https://erikdeluca.it/projects.xml" rel="self" type="application/rss+xml"/>
+<description>Erik De Luca&#39;s personal website. It contains talks, posts and info about a data scientist involved into insurance and biostatistics fields</description>
 <generator>quarto-1.7.33</generator>
 <lastBuildDate>Mon, 10 Mar 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Biostatistician Interview</title>
-  <link>https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/</link>
+  <link>https://erikdeluca.it/projects/2025-03-10_Biostatistician_Interview/</link>
   <description><![CDATA[ 
 
 
@@ -73,13 +73,13 @@
   <category>Survival Analysis</category>
   <category>Interview</category>
   <category>Revealjs</category>
-  <guid>https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/</guid>
+  <guid>https://erikdeluca.it/projects/2025-03-10_Biostatistician_Interview/</guid>
   <pubDate>Mon, 10 Mar 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2025-03-10_Biostatistician_Interview/logo.png" medium="image" type="image/png" height="71" width="144"/>
+  <media:content url="https://erikdeluca.it/projects/2025-03-10_Biostatistician_Interview/logo.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 <item>
   <title>Life Insurance Dashboard</title>
-  <link>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</link>
+  <link>https://erikdeluca.it/projects/2021-08-29_Dashboard_Life_Insurances/</link>
   <description><![CDATA[ 
 
 
@@ -97,7 +97,7 @@
 <!-- This is very much an ongoing work in-progress, but the first version included a "Gear Garage" for tracking mileage on my hiking boots and bike, an activity heat map of all recorded hikes, bike rides, and walks, visualizations for exploring activity distance and elevation gain, and an interactive table of the raw data. -->
 <!-- There are many more visualizations and features I'd love to add (but have been severely lacking the time to do so). I also still manually retrieve new activities using the Strava API via the [`{rStrava}` package](https://github.com/fawda123/rStrava), but I hope to automate this in the next version. Stay tuned! -->
 <p><br></p>
-<p><img class="img-styling" src="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" alt="Shiny dashboard" width="70%"></p>
+<p><img class="img-styling" src="https://erikdeluca.it/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" alt="Shiny dashboard" width="70%"></p>
 
 
 
@@ -105,13 +105,13 @@
   <category>Shiny</category>
   <category>Life Insurance</category>
   <category>Actuarial Science</category>
-  <guid>https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/</guid>
+  <guid>https://erikdeluca.it/projects/2021-08-29_Dashboard_Life_Insurances/</guid>
   <pubDate>Mon, 17 Feb 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" medium="image" type="image/png" height="82" width="144"/>
+  <media:content url="https://erikdeluca.it/projects/2021-08-29_Dashboard_Life_Insurances/panel.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 <item>
   <title>Statistical Analysis of Urban Waste</title>
-  <link>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/</link>
+  <link>https://erikdeluca.it/projects/2025-01-10_Waste_Analysis_R_SAS/</link>
   <description><![CDATA[ 
 
 
@@ -144,13 +144,13 @@ Note
   <category>Reporting</category>
   <category>PCA</category>
   <category>Clustering</category>
-  <guid>https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/</guid>
+  <guid>https://erikdeluca.it/projects/2025-01-10_Waste_Analysis_R_SAS/</guid>
   <pubDate>Fri, 10 Jan 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2025-01-10_Waste_Analysis_R_SAS/copertina.png" medium="image" type="image/png" height="87" width="144"/>
+  <media:content url="https://erikdeluca.it/projects/2025-01-10_Waste_Analysis_R_SAS/copertina.png" medium="image" type="image/png" height="87" width="144"/>
 </item>
 <item>
   <title>Idealista: housing sale in Trieste</title>
-  <link>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/</link>
+  <link>https://erikdeluca.it/projects/2024-12-17_Idealista_API/</link>
   <description><![CDATA[ 
 
 
@@ -1675,7 +1675,7 @@ font-style: inherit;">theme_minimal</span>()</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/grid plot-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/grid plot-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2120,7 +2120,7 @@ font-style: inherit;">6</span>)</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/correletion plot-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/correletion plot-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2147,7 +2147,7 @@ font-style: inherit;">theme_minimal</span>())</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2708,7 +2708,7 @@ font-style: inherit;">2</span>) </span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/grid research-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/grid research-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2783,7 +2783,7 @@ font-style: inherit;">label_number</span>())</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/grid research-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/grid research-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -3161,7 +3161,7 @@ font-style: inherit;">geom_col</span>()</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2024-12-17_Idealista_API/index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -3177,19 +3177,19 @@ font-style: inherit;">geom_col</span>()</span></code></pre></div>
   <category>R</category>
   <category>Idealista</category>
   <category>Leaflet</category>
-  <guid>https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/</guid>
+  <guid>https://erikdeluca.it/projects/2024-12-17_Idealista_API/</guid>
   <pubDate>Tue, 17 Dec 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2024-12-17_Idealista_API/logo_Idealista_API_2.png" medium="image" type="image/png" height="82" width="144"/>
+  <media:content url="https://erikdeluca.it/projects/2024-12-17_Idealista_API/logo_Idealista_API_2.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 <item>
   <title>McGill International Portfolio Challenge</title>
-  <link>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/</link>
+  <link>https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/data/first_image_MIPC_Asset_Allocator.png" class="img-fluid" style="width:0.0%"> <a href="https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge">International competition</a> for the best portfolio in a fund plan, organized by <a href="https://www.mcgill.ca/">McGill University</a>, Canada.</p>
+<p><img src="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/data/first_image_MIPC_Asset_Allocator.png" class="img-fluid" style="width:0.0%"> <a href="https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge">International competition</a> for the best portfolio in a fund plan, organized by <a href="https://www.mcgill.ca/">McGill University</a>, Canada.</p>
 <p>My aim was to find the best weights that could be used by a pension fund. The portfolio is composed by REITS, Commodities, CAT BOND, Dividends, Short term bonds, Cash and Inflation linked.</p>
 <section id="import-data" class="level2">
 <h2 class="anchored" data-anchor-id="import-data">Import data</h2>
@@ -4595,7 +4595,7 @@ font-style: inherit;">element_blank</span>())</span>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/grafico andamento portafoglio-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/grafico andamento portafoglio-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -6490,7 +6490,7 @@ font-style: inherit;">element_blank</span>())</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/Creazione portafoglio ottimizzato-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/Creazione portafoglio ottimizzato-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -7111,7 +7111,7 @@ font-style: inherit;">8</span>))</span></code></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/VaR singoli titoli-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/VaR singoli titoli-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -7349,7 +7349,7 @@ font-style: inherit;">"Value at Risk"</span>,</span>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/istogramma VaR-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/index_files/figure-html/istogramma VaR-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -7559,9 +7559,9 @@ font-style: inherit;">ggplotly</span>(p)</span></code></pre></div>
  ]]></description>
   <category>Finance</category>
   <category>Time Series</category>
-  <guid>https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/</guid>
+  <guid>https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/</guid>
   <pubDate>Sun, 15 Oct 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://erikdeluca.github.io/projects/2023-10-15_MIPC_Asset_Allocator/logo_MIPC_Asset_Allocator.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://erikdeluca.it/projects/2023-10-15_MIPC_Asset_Allocator/logo_MIPC_Asset_Allocator.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
