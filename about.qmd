@@ -8,13 +8,20 @@ website:
 
 Here is a resume of my education and working experiences.
 
-### Working
+### Actual Work
 
-Since I started the master I have been working jobs related to my field of studies. Before, I worked in different backgrounds. Thanks to the multifacetic jobs that I had, I was able to expand my vision.
+#### Actuary Pricing Motor
+
+My current job is based in Trieste, my hometown. I work at Allianz as an actuary in the motor pricing team.
+Together with my team, I am responsible for developing the technical and tariff models for the motor sector of the Italian branch.
+
+### Past Work Positions
+
+During my master I worked in jobs related to my field of studies. Before, I was working in different backgrounds which helped me to grow  cross-functionally 
 
 #### Actuary - Internship
 
-I just came back from Munich (Germany) where I completed my internship at Allianz, one of the world's leading insurance and financial services providers. I worked for 6 months at Allianz SE, holding company of Allianz Group, in the H2 department, related to the finance processes. Specifically, I worked in the Group Actuarial Non-Life team, responsible for the Actuarial Function of the company, which is the team in charge of risk assessment, financial modeling, regulatory compliance, and strategic planning.
+My internship took place at Munich, Germappny, in one of the world's leading insurance and financial services providers. I worked for 6 months at Allianz SE, holding company of Allianz Group, in the H2 department, related to the finance processes. Specifically, I worked in the Group Actuarial Non-Life team, responsible for the Actuarial Function of the company, which is the team in charge of risk assessment, financial modeling, regulatory compliance, and strategic planning.
 
 In my case, I was dedicated to:
 
@@ -48,7 +55,6 @@ The models built were GLM (generalized linear models), some of them were zero-in
 
 -   Chi-square and proportion test to inference when the frequency of an answer is different by socio-demographic characteristics.
 
-The project is still on the way and once it finish, I'll upload here all my notebooks and link my papers.
 
 #### Teacher
 
@@ -62,7 +68,7 @@ It was a really important part of my life where I learned (not only taught) a lo
 
 Here is a short overall about my studies:
 
--   Master's degree in Statistics and Actuarial Science with a curriculum in Data Science for Finance and Insurance at the University of Trieste. (Currently enrolled)
+-   Master's degree in Statistics and Actuarial Science with a curriculum in Data Science for Finance and Insurance at the University of Trieste.
 
 -   Erasmus, during my master, at the University of Malaga (Spain) where the classes were in Spanish.
 
@@ -80,9 +86,9 @@ I think that sport is very important in the life and helps to develop strength a
 
 -   Run: I'm not very fast and not the best runner definitely. But I'm really proud about a personal challenge done in 2023, where I finished a trail of 57 Km without ever having ran more than 21 Km. It was quite mind-challenging.
 
--   My secret dream is climbing, and that is my scope for the future. Until now I have only practiced bouldering in Germany, which is a fantastic place for that., but for sure one of my purposes for 2025 is finding my new place for bouldering.
+-   Climbing: during my internship in Munich I discovered bouldering and when I came back, I started to climb outdoor: on the rock.
 
-### Travel
+<!-- ### Travel
 
 I could be boring on this point but it is the truth. I think that post-COVID most people changed their habits and I wasn't the exception. I've been to 20 countries, but some of them have been important for me:
 
@@ -94,7 +100,7 @@ I could be boring on this point but it is the truth. I think that post-COVID mos
 
 -   Marocco: I've been twice but why talking about the easy time with a touristic tour? Well, my girlfriend and I decided to take a random flight to the most unknown city, Nador, and what an adventure with no data and no local language during Ramadan. It has been a full immersion in the Arabic culture.
 
--   Houston (USA): I went to a wedding and I had the opportunity to live as a Texan for one week.
+-   Houston (USA): I went to a wedding and I had the opportunity to live as a Texan for one week. -->
 
 ### Beer
 

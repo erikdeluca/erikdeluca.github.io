@@ -2,9 +2,9 @@
 title: McGill International Portfolio Challenge
 description: |
   [International competition](https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge) for the best portfolio in a fund plan, organized by [McGill University](https://www.mcgill.ca/), Canada.
-# author: Erik De Luca
+author: Erik De Luca
 date: "2023-10-15"
-categories: [Finance, Time Series]
+categories: [Finance, Time Series, Competition, Optimization]
 image: logo_MIPC_Asset_Allocator.png
 draft: false
 comments:
