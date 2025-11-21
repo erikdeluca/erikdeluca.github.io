@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Using advanced HMM-GLM models to predict the number of donations made by a blood donor in the upcoming year based on previous donation history and the demographic informations available, as age and sex.">
 
-<title>Erik De Luca</title>
+<title>Blood Donors Prediction – Erik De Luca</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +25,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/logo_3_0.png" rel="icon" type="image/png">
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d1f97e0b2c04b64f9e7ed0a3e6aa1605.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/logo_3_0.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d1f97e0b2c04b64f9e7ed0a3e6aa1605.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,10 +104,12 @@ cookieconsent.run({
   
 
 
-<meta property="og:title" content="Erik De Luca">
-<meta property="og:description" content="Erik De Luca’s personal website. It contains talks, posts and info about a data scientist involved into insurance and biostatistics fields">
-<meta property="og:image" content="https://erikdeluca.it/media/foto_profilo_az.jpg">
+<meta property="og:title" content="Blood Donors Prediction – Erik De Luca">
+<meta property="og:description" content="Using advanced HMM-GLM models to predict the number of donations made by a blood donor in the upcoming year based on previous donation history and the demographic informations available, as age and sex.">
+<meta property="og:image" content="https://erikdeluca.it/projects/2025-11-21_Master_thesis/model_diagram.png">
 <meta property="og:site_name" content="Erik De Luca">
+<meta property="og:image:height" content="768">
+<meta property="og:image:width" content="1024">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -114,9 +119,9 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo light-content">
-    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo light-content">
+    <img src="../../media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -126,15 +131,15 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications and Talks</span></a>
   </li>  
   <li class="nav-item">
@@ -142,7 +147,7 @@ cookieconsent.run({
 <span class="menu-text">Master Thesis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -156,45 +161,109 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#project-description" id="toc-project-description" class="nav-link" data-scroll-target="#project-description">Project Description</a></li>
+  <li><a href="#interactive-slides" id="toc-interactive-slides" class="nav-link" data-scroll-target="#interactive-slides">Interactive Slides</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="media/foto_profilo_az.jpg" class="about-image
-  round " style="height: 18em; width: 18em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Erik De Luca</h1>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title">Blood Donors Prediction</h1>
+<p class="subtitle lead">Master Thesis Project</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Biostatistics</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Revealjs</div>
   </div>
-</header><main class="content column-page" id="quarto-document-content">
-<p>Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics <i class="fa-solid fa-chart-line" aria-label="chart-line"></i> and actuarial techniques, I have a keen interest in quantitative finance <i class="fa-solid fa-money-bill-wave" aria-label="money-bill-wave"></i>, portfolio optimization <i class="fa-solid fa-chart-pie" aria-label="chart-pie"></i>, and public health analytics <i class="fa-solid fa-heartbeat" aria-label="heartbeat"></i>. When not immersed in numbers, I indulge in travel <i class="fa-solid fa-plane" aria-label="plane"></i>, craft beer brewing <i class="fa-solid fa-beer" aria-label="beer"></i>, and judo <i class="fa-solid fa-user-ninja" aria-label="user-ninja"></i>. Welcome to my corner of the web!</p>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Using advanced HMM-GLM models to predict the number of donations made by a blood donor in the upcoming year based on previous donation history and the demographic informations available, as age and sex.</p>
+  </div>
+</div>
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://www.linkedin.com/in/erikdeluca/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/erikdeluca" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:erikdeluca@gmail.com" class="about-link" rel="" target="_blank">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/erikdeluca/erikdeluca.github.io/blob/master/media/CV_ENG_Biostatistician_DS_02_25.pdf" class="about-link" rel="" target="_blank">
-    <i class="bi bi-file-pdf"></i>
-     <span class="about-link-text">Resume</span>
-  </a>
+<div class="quarto-title-meta column-page-left">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="https://www.erikdeluca.it/Blood-Donors/thesis" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> Thesis</a></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="logo_project.png" class="img-fluid"></p>
+</div></div><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
- <!-- /main -->
+<div class="callout-body-container callout-body">
+<p>The thesis and the slides are in Italian.</p>
+</div>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Last month I successfully defended my master thesis titled <em>“Statistics Models for Blood Donations in Trieste - Hidden Markov Models integrated by Generalized Linear Models within a Bayesian approach”</em>. This project represents the culmination of my academic journey in statistics, where I applied advanced statistical modeling techniques to a real-world healthcare problem.</p>
+</section>
+<section id="project-description" class="level2">
+<h2 class="anchored" data-anchor-id="project-description">Project Description</h2>
+<p>The data used for this project come from ASUGI (Azienda Sanitaria Universitaria Giuliano Isontina), the local health authority of my city: Trieste. The dataset includes information on blood donors in the province of Trieste, covering donation history, demographic details. The data were anonymized to ensure donor privacy, so no personal identifiers were included and the covariates were limited to age and sex. However, the dataset was rich in temporal information, allowing for the analysis of donation patterns over 15 years of observations and more than 9.000 unique donors.</p>
+<p>The primary objective of the thesis was to develop a predictive model capable of forecasting the number of donations a blood donor is likely to make in the upcoming year. This prediction is based on their previous donation history and demographic information. To achieve this, I employed a combination of Hidden Markov Models (HMM) and Generalized Linear Models (GLM) within a Bayesian framework. The HMM component was used to capture the underlying states of donor behavior over time, while the GLM component allowed for the incorporation of covariates such as age and sex. The Bayesian approach, implementing priors in covariate coefficients of initial and transition probabilities, provided a robust framework for parameter estimation and model stability. While the data manipulation and exploratory analysis were primarily conducted using R, the core modeling work was implemented in Python. This choice was driven by the availability of a specialized library: <code>pyro</code>, which facilitated the construction and estimation of complex probabilistic models.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="model_diagram.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Model Diagram</figcaption>
+</figure>
+</div>
+<p>For the project a website has been created to show the results and the methodology used: <a href="https://www.erikdeluca.it/Blood-Donors/" target="_blank">Blood Donors Prediction - Master Thesis</a>. This website contain the full thesis in different formats, the code used for the analysis and the slides used for the discussions.</p>
+</section>
+<section id="interactive-slides" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-slides">Interactive Slides</h2>
+<p><a href="https://www.erikdeluca.it/Blood-Donors/slides/presentation-thesis.html#/title-slide" class="btn" target="_blank"><i class="fa-solid fa-newspaper" aria-label="newspaper"></i> Full Screen Slides</a></p>
+<iframe src="https://www.erikdeluca.it/Blood-Donors/slides/presentation-thesis.html#/title-slide" width="100%" height="600px">
+</iframe>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -586,6 +655,35 @@ cookieconsent.run({
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "erikdeluca/erpikdeluca.github.io";
+    script.dataset.repoId = "R_kgDONcJGag";
+    script.dataset.category = "Announcements";
+    script.dataset.categoryId = "DIC_kwDONcJGas4Cmzjk";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
