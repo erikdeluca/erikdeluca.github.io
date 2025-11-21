@@ -18,6 +18,9 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications and Talks
+      - href: https://erikdeluca.it/Blood-Donors/
+        text: Master Thesis
+        target: _blank
       - href: about.qmd
         text: About
   page-footer:

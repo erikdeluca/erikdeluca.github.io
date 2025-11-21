@@ -12,7 +12,7 @@ Here is a resume of my education and working experiences.
 
 #### Actuary Pricing Motor
 
-My current job is based in Trieste, my hometown. I work at Allianz as an actuary in the motor pricing team.
+I currently work in Trieste, my hometown. I work at Allianz as an actuary in the motor pricing team.
 Together with my team, I am responsible for developing the technical and tariff models for the motor sector of the Italian branch.
 
 ### Past Work Positions
@@ -21,7 +21,7 @@ During my master I worked in jobs related to my field of studies. Before, I was 
 
 #### Actuary - Internship
 
-My internship took place at Munich, Germappny, in one of the world's leading insurance and financial services providers. I worked for 6 months at Allianz SE, holding company of Allianz Group, in the H2 department, related to the finance processes. Specifically, I worked in the Group Actuarial Non-Life team, responsible for the Actuarial Function of the company, which is the team in charge of risk assessment, financial modeling, regulatory compliance, and strategic planning.
+My internship took place at Munich, Germany, in one of the world's leading insurance and financial services providers. I worked for 6 months at Allianz SE, holding company of Allianz Group, in the H2 department, related to the finance processes. Specifically, I worked in the Group Actuarial Non-Life team, responsible for the Actuarial Function of the company, which is the team in charge of risk assessment, financial modeling, regulatory compliance, and strategic planning.
 
 In my case, I was dedicated to:
 
@@ -39,15 +39,15 @@ In my case, I was dedicated to:
 
 From August 2023 to December 2024, I was involved in national medical research where I was in charge of the statistical part. The topic was *"Education in lower and upper secondary schools and support of the network of reference figures for youth for prevention of HPV and other sexually transmitted infections".*
 
-My tasks were:
+My tasks included:
 
--   Analyzing surveys via R and building reports for the different geographic areas and school levels;
+-   Analyzing surveys using R and building reports for the different geographic areas and school levels;
 
 -   Building reports which contained stratified frequency tables, charts, models and statistical tests;
 
 -   Writing the methodologic analysis in research papers.
 
-The models built were GLM (generalized linear models), some of them were zero-inflated quasipoisson due to the scoring rules of the survey. The statistical tests used were:
+I built GLMs (generalized linear models), some of them were zero-inflated quasipoisson due to the scoring rules of the survey. The statistical tests used were:
 
 -   McNemar test for detecting if there is a change between the pre and post intervention.
 
@@ -58,7 +58,7 @@ The models built were GLM (generalized linear models), some of them were zero-in
 
 #### Teacher
 
-It sounds rare but during my bachelor's, I worked for almost 3 years as a teacher in a public primary school. I started during the pandemic when there was a huge lack of teachers and I took the opportunity!
+It sounds rare but during my bachelor's, I worked for almost 3 years as a teacher in a public primary school. I started during the pandemic when there was a significant teacher shortage and I took the opportunity!
 
 It was a big challenge for me. I was in charge of teaching subjects such as math and science to children from 6 to 11 y.o. It taught me to manage a team of about 25 people (the students), very heterogeneous. Actually, I didn't learn only how to manage students, but also the other class teachers, as I was given the role of coordinator, handling all the bureaucratic stuff.
 

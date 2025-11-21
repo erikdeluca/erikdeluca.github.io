@@ -1,0 +1,51 @@
+---
+title: Blood Donors Prediction
+subtitle: Master Thesis Project 
+description: |
+  Using advanced HMM-GLM models to predict the number of donations made by a blood donor in the upcoming year based on previous donation history and the demographic informations available, as age and sex.
+date: 2025-11-21  
+categories: [Biostatistics, R, Python, Revealjs]  
+image: model_diagram.png
+comments:
+  giscus:
+    repo: erikdeluca/erpikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
+---
+
+[{{< fa newspaper >}} Thesis](https://www.erikdeluca.it/Blood-Donors/thesis){.btn target="_blank"}
+
+::: {.column-margin}
+![](logo_project.png)
+:::
+
+::: callout-note
+The thesis and the slides are in Italian.
+:::
+
+## Overview
+
+Last month I successfully defended my master thesis titled *"Statistics Models for Blood Donations in Trieste - Hidden Markov Models integrated by Generalized Linear Models within a Bayesian approach"*. This project represents the culmination of my academic journey in statistics, where I applied advanced statistical modeling techniques to a real-world healthcare problem.
+
+## Project Description
+
+The data used for this project come from ASUGI (Azienda Sanitaria Universitaria Giuliano Isontina), the local health authority of my city: Trieste. The dataset includes information on blood donors in the province of Trieste, covering donation history, demographic details. The data were anonymized to ensure donor privacy, so no personal identifiers were included and the covariates were limited to age and sex.
+However, the dataset was rich in temporal information, allowing for the analysis of donation patterns over 15 years of observations and more than 9.000 unique donors.
+
+The primary objective of the thesis was to develop a predictive model capable of forecasting the number of donations a blood donor is likely to make in the upcoming year. This prediction is based on their previous donation history and demographic information.
+To achieve this, I employed a combination of Hidden Markov Models (HMM) and Generalized Linear Models (GLM) within a Bayesian framework. The HMM component was used to capture the underlying states of donor behavior over time, while the GLM component allowed for the incorporation of covariates such as age and sex.
+The Bayesian approach, implementing priors in covariate coefficients of initial and transition probabilities, provided a robust framework for parameter estimation and model stability.
+While the data manipulation and exploratory analysis were primarily conducted using R, the core modeling work was implemented in Python. This choice was driven by the availability of a specialized library: `pyro`, which facilitated the construction and estimation of complex probabilistic models.
+
+![Model Diagram](model_diagram.png){width=60%}
+
+For the project a website has been created to show the results and the methodology used: [Blood Donors Prediction - Master Thesis](https://www.erikdeluca.it/Blood-Donors/){target="_blank"}. This website contain the full thesis in different formats, the code used for the analysis and the slides used for the discussions.
+
+## Interactive Slides
+
+[{{< fa newspaper >}} Full Screen Slides](https://www.erikdeluca.it/Blood-Donors/slides/presentation-thesis.html#/title-slide){.btn target="_blank"}
+
+<iframe src="https://www.erikdeluca.it/Blood-Donors/slides/presentation-thesis.html#/title-slide" width="100%" height="600px"></iframe>
