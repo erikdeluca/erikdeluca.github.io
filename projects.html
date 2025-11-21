@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,14 +37,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-09d0cf1ea52aee9499154c958e147964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d1f97e0b2c04b64f9e7ed0a3e6aa1605.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -145,7 +146,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -177,7 +178,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo light-content">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -231,7 +233,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QWN0dWFyaWFsJTIwU2NpZW5jZQ==">Actuarial Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QVBJ">API <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Qmlvc3RhdGlzdGljcw==">Biostatistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2x1c3RlcmluZw==">Clustering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmluYW5jZQ==">Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SWRlYWxpc3Rh">Idealista <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJ2aWV3">Interview <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVhZmxldA==">Leaflet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGlmZSUyMEluc3VyYW5jZQ==">Life Insurance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UENB">PCA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVhbCUyMEVzdGF0ZQ==">Real Estate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwb3J0aW5n">Reporting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmV2ZWFsanM=">Revealjs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0FT">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2hpbnk=">Shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBBbmFseXNpcw==">Survival Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGltZSUyMFNlcmllcw==">Time Series <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QWN0dWFyaWFsJTIwU2NpZW5jZQ==">Actuarial Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QVBJ">API <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Qmlvc3RhdGlzdGljcw==">Biostatistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2x1c3RlcmluZw==">Clustering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcGV0aXRpb24=">Competition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmluYW5jZQ==">Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SWRlYWxpc3Rh">Idealista <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJ2aWV3">Interview <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVhZmxldA==">Leaflet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGlmZSUyMEluc3VyYW5jZQ==">Life Insurance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3B0aW1pemF0aW9u">Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UENB">PCA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVhbCUyMEVzdGF0ZQ==">Real Estate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwb3J0aW5n">Reporting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmV2ZWFsanM=">Revealjs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0FT">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2hpbnk=">Shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBBbmFseXNpcw==">Survival Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGltZSUyMFNlcmllcw==">Time Series <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -240,7 +242,7 @@ window.Quarto = {
 
 
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -265,7 +267,7 @@ Note
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ1N1cnZpdmFsJTIwQW5hbHlzaXMlMkNJbnRlcnZpZXclMkNSZXZlYWxqcw==" data-listing-date-sort="1741564800000" data-listing-file-modified-sort="1755699937607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<div class="g-col-1" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ1N1cnZpdmFsJTIwQW5hbHlzaXMlMkNJbnRlcnZpZXclMkNSZXZlYWxqcw==" data-listing-date-sort="1741564800000" data-listing-file-modified-sort="1763739124505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
 <a href="./projects/2025-03-10_Biostatistician_Interview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -300,7 +302,7 @@ Mar 10, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="U2hpbnklMkNMaWZlJTIwSW5zdXJhbmNlJTJDQWN0dWFyaWFsJTIwU2NpZW5jZQ==" data-listing-date-sort="1739750400000" data-listing-file-modified-sort="1755699937493" data-listing-date-modified-sort="1739750400000" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
+<div class="g-col-1" data-index="1" data-categories="U2hpbnklMkNMaWZlJTIwSW5zdXJhbmNlJTJDQWN0dWFyaWFsJTIwU2NpZW5jZQ==" data-listing-date-sort="1739750400000" data-listing-file-modified-sort="1763739124384" data-listing-date-modified-sort="1739750400000" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
 <a href="./projects/2021-08-29_Dashboard_Life_Insurances/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -333,7 +335,7 @@ Feb 17, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U0FTJTJDUmVwb3J0aW5nJTJDUENBJTJDQ2x1c3RlcmluZw==" data-listing-date-sort="1736467200000" data-listing-file-modified-sort="1755699937529" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<div class="g-col-1" data-index="2" data-categories="U0FTJTJDUmVwb3J0aW5nJTJDUENBJTJDQ2x1c3RlcmluZw==" data-listing-date-sort="1736467200000" data-listing-file-modified-sort="1763739124425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
 <a href="./projects/2025-01-10_Waste_Analysis_R_SAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -368,7 +370,7 @@ Jan 10, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="QVBJJTJDUmVhbCUyMEVzdGF0ZSUyQ1IlMkNJZGVhbGlzdGElMkNMZWFmbGV0" data-listing-date-sort="1734393600000" data-listing-file-modified-sort="1755699937500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4089">
+<div class="g-col-1" data-index="3" data-categories="QVBJJTJDUmVhbCUyMEVzdGF0ZSUyQ1IlMkNJZGVhbGlzdGElMkNMZWFmbGV0" data-listing-date-sort="1734393600000" data-listing-file-modified-sort="1763739124391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4089">
 <a href="./projects/2024-12-17_Idealista_API/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -405,7 +407,7 @@ Dec 17, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="RmluYW5jZSUyQ1RpbWUlMjBTZXJpZXM=" data-listing-date-sort="1697328000000" data-listing-file-modified-sort="1755699937499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4716">
+<div class="g-col-1" data-index="4" data-categories="RmluYW5jZSUyQ1RpbWUlMjBTZXJpZXMlMkNDb21wZXRpdGlvbiUyQ09wdGltaXphdGlvbg==" data-listing-date-sort="1697328000000" data-listing-file-modified-sort="1763739124389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4716">
 <a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
 <p class="card-img-top">
@@ -421,13 +423,17 @@ McGill International Portfolio Challenge
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGltZSUyMFNlcmllcw=='); return false;">Time Series</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tcGV0aXRpb24='); return false;">Competition</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('T3B0aW1pemF0aW9u'); return false;">Optimization</div>
+
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
 </a><p><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link"></a><a href="https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge">International competition</a> for the best…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-
+Erik De Luca
 </div>
 <div class="listing-date">
 Oct 15, 2023
@@ -490,13 +496,14 @@ Oct 15, 2023
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

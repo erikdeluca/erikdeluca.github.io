@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,14 +37,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-09d0cf1ea52aee9499154c958e147964.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d1f97e0b2c04b64f9e7ed0a3e6aa1605.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -173,7 +174,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -205,7 +206,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo light-content">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -270,7 +272,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="listing-publications_id" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ0hQViUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740355200000" data-listing-file-modified-sort="1755699937611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="880">
+<div class="quarto-post image-right" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ0hQViUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740355200000" data-listing-file-modified-sort="1763739124509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="880">
 <div class="thumbnail"><a href="./publications/2025-02-24 HPV t zero/index.html" class="no-external">
 
 <img loading="lazy" src="./publications/2025-02-24 HPV t zero/cover.png" class="thumbnail-image">
@@ -295,7 +297,7 @@ Feb 24, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljJTIwSGVhbHRoJTJDQWRvbGVzY2VudCUyMEVkdWNhdGlvbiUyQ1NUSSUyMEF3YXJlbmVzcw==" data-listing-date-sort="1730073600000" data-listing-file-modified-sort="1755699937608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="254">
+<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljJTIwSGVhbHRoJTJDQWRvbGVzY2VudCUyMEVkdWNhdGlvbiUyQ1NUSSUyMEF3YXJlbmVzcw==" data-listing-date-sort="1730073600000" data-listing-file-modified-sort="1763739124507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="254">
 <div class="thumbnail"><a href="./publications/2024-10-28_ESPRIT_results_pre_intervention/index.html" class="no-external">
 
 <img loading="lazy" src="./publications/2024-10-28_ESPRIT_results_pre_intervention/punteggio_Regione_Secondaria di secondo grado.png" class="thumbnail-image">
@@ -328,7 +330,7 @@ Oct 28, 2024
 <h2 class="anchored" data-anchor-id="talks">Talks</h2>
 <div id="listing-talks_id" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHVibGljJTIwSGVhbHRoJTJDQmlvc3RhdGlzdGljcyUyQ0hQViUyQ0NvbmZlcmVuY2UlMkNFZHVjYXRpb24=" data-listing-date-sort="1748217600000" data-listing-file-modified-sort="1755699937631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="131">
+<div class="quarto-post image-right" data-index="0" data-categories="UHVibGljJTIwSGVhbHRoJTJDQmlvc3RhdGlzdGljcyUyQ0hQViUyQ0NvbmZlcmVuY2UlMkNFZHVjYXRpb24=" data-listing-date-sort="1748217600000" data-listing-file-modified-sort="1763739124531" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="131">
 <div class="thumbnail"><a href="./talks/05-2025-Presentazione-ISS/index.html" class="no-external">
 
 <img loading="lazy" src="./talks/05-2025-Presentazione-ISS/iss-talk.png" class="thumbnail-image">
@@ -353,7 +355,7 @@ May 26, 2025
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljJTIwSGVhbHRoJTJDQmlvc3RhdGlzdGljcyUyQ0hQViUyQ1NURCUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740700800000" data-listing-file-modified-sort="1755699937621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
+<div class="quarto-post image-right" data-index="1" data-categories="UHVibGljJTIwSGVhbHRoJTJDQmlvc3RhdGlzdGljcyUyQ0hQViUyQ1NURCUyQ1N1cnZleSUyMEFuYWx5c2lz" data-listing-date-sort="1740700800000" data-listing-file-modified-sort="1763739124520" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
 <div class="thumbnail"><a href="./talks/02-2025-Presentazione-ESPRIT/index.html" class="no-external">
 
 <img loading="lazy" src="./talks/02-2025-Presentazione-ESPRIT/logo.png" class="thumbnail-image">
@@ -438,13 +440,14 @@ Feb 28, 2025
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
