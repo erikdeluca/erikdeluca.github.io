@@ -9,7 +9,7 @@
 <link>https://erikdeluca.it/projects.html</link>
 <atom:link href="https://erikdeluca.it/projects.xml" rel="self" type="application/rss+xml"/>
 <description>Erik De Luca&#39;s personal website. It contains talks, posts and info about a data scientist involved into insurance and biostatistics fields</description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.8.27</generator>
 <lastBuildDate>Fri, 21 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Blood Donors Prediction</title>
