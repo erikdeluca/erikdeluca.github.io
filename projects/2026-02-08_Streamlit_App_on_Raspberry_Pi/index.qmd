@@ -1,0 +1,26 @@
+---
+title: Run your own app, in your own server, in an easy way
+subtitle: A cheap, fast and safe way to have your home server
+description: |
+    Run your containerized app built in Python, within Streamlit, on a Raspberry and get it available for everyone in a safe mode thanks to Cloudflare.
+date: 2026-02-08  
+categories: [Python, Streamlit, Server]  
+image: model_diagram.png
+comments:
+  giscus:
+    repo: erikdeluca/erpikdeluca.github.io
+    repo-id: R_kgDONcJGag
+    category: Announcements
+    category-id: DIC_kwDONcJGas4Cmzjk
+    reactions-enabled: true
+    mapping: pathname
+draft: true
+---
+
+## Intro
+
+When I was buildings app and dashboard in R, with Shiny and Quarto, I was struggeling that my product should run in an external server of someone else. Such that, my data were/are stored in servers which I don't know where they phsyical are.
+For a reliable chooise, I'm currently hosting my website on Github Pages, but it has some costraints: first of all that it allows only static web sites, so forget of beatiful and dinamicalm dashboards.
+So, I decided to setup a own server, that at the end could be just your old laptop or, as in my case, a cheap Raspberry Pi 5.
+
+In this article, I'm going to show how I configured and built everything. Starting
