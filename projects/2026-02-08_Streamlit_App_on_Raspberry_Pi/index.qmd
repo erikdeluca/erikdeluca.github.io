@@ -19,7 +19,7 @@ draft: true
 
 ## Intro
 
-When I was buildings app and dashboard in R, with Shiny and Quarto, I was struggeling that my product should run in an external server of someone else. Such that, my data were/are stored in servers which I don't know where they phsyical are.
+When I was buildings app and dashboard in R, with Shiny and Quarto, I was struggling that my product should run in an external server of someone else. Such that, my data were/are stored in servers which I don't know where they phsyical are.
 For a reliable chooise, I'm currently hosting my website on Github Pages, but it has some costraints: first of all that it allows only static web sites, so forget of beatiful and dinamicalm dashboards.
 So, I decided to setup a own server, that at the end could be just your old laptop or, as in my case, a cheap Raspberry Pi 5.
 
