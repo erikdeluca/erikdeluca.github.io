@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Projects – Erik De Luca</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -37,14 +43,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b973de3ed5215a4d5b3bc892a21450e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-befcfbd958b6fc5fa6142a2bd1bd48a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -96,12 +103,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-X7MSMF2M7M"></script>
 
@@ -117,10 +118,10 @@ gtag('config', 'G-X7MSMF2M7M', { 'anonymize_ip': true});
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"simple",
-  "consent_type":"express",
+  "consent_type":"implied",
   "palette":"light",
   "language":"en",
-  "page_load_consent_levels":["strictly-necessary"],
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
@@ -130,9 +131,11 @@ cookieconsent.run({
 });
 </script> 
   
+<script data-goatcounter="https://erikdeluca.goatcounter.com/count" async="" src="//gc.zgo.at/count.js">
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -145,7 +148,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -169,19 +172,19 @@ window.Quarto = {
 <meta property="og:image:width" content="1024">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo light-content">
+    <img src="./media/logo2.1 rectangle.png" alt="Logo with some points in a chart and erik de luca written" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -210,6 +213,7 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -237,14 +241,14 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QWN0dWFyaWFsJTIwU2NpZW5jZQ==">Actuarial Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QVBJ">API <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Qmlvc3RhdGlzdGljcw==">Biostatistics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q2x1c3RlcmluZw==">Clustering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcGV0aXRpb24=">Competition <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RmluYW5jZQ==">Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SWRlYWxpc3Rh">Idealista <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJ2aWV3">Interview <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVhZmxldA==">Leaflet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGlmZSUyMEluc3VyYW5jZQ==">Life Insurance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3B0aW1pemF0aW9u">Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UENB">PCA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVhbCUyMEVzdGF0ZQ==">Real Estate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVwb3J0aW5n">Reporting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmV2ZWFsanM=">Revealjs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U0FT">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2hpbnk=">Shiny <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBBbmFseXNpcw==">Survival Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGltZSUyMFNlcmllcw==">Time Series <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content" tabindex="-1">
 
 
 
 
 
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -269,8 +273,8 @@ Note
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ1IlMkNQeXRob24lMkNSZXZlYWxqcw==" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763741433333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="364">
-<a href="./projects/2025-11-21_Master_thesis/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="Qmlvc3RhdGlzdGljcyUyQ1IlMkNQeXRob24lMkNSZXZlYWxqcw==" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1793966192552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="364">
+<a href="./projects/2025-11-21_Master_thesis/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2025-11-21_Master_thesis/model_diagram.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -290,7 +294,7 @@ Blood Donors Prediction
 <div class="listing-category" onclick="window.quartoListingCategory('UmV2ZWFsanM='); return false;">Revealjs</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>Using advanced HMM-GLM models to predict the number of donations made by a blood donor in the upcoming year based on previous donation history and the demographic…</p>
 </div>
 <div class="card-attribution card-text-small justify">
@@ -304,8 +308,8 @@ Nov 21, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Qmlvc3RhdGlzdGljcyUyQ1N1cnZpdmFsJTIwQW5hbHlzaXMlMkNJbnRlcnZpZXclMkNSZXZlYWxqcw==" data-listing-date-sort="1741561200000" data-listing-file-modified-sort="1743595208588" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
-<a href="./projects/2025-03-10_Biostatistician_Interview/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="Qmlvc3RhdGlzdGljcyUyQ1N1cnZpdmFsJTIwQW5hbHlzaXMlMkNJbnRlcnZpZXclMkNSZXZlYWxqcw==" data-listing-date-sort="1741561200000" data-listing-file-modified-sort="1793966192552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<a href="./projects/2025-03-10_Biostatistician_Interview/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2025-03-10_Biostatistician_Interview/logo.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -325,7 +329,7 @@ Biostatistician Interview
 <div class="listing-category" onclick="window.quartoListingCategory('UmV2ZWFsanM='); return false;">Revealjs</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>Analyzing a dataset related to lung cancer patients to demonstrate my skills in data analysis and statistical modeling</p>
 </div>
 <div class="card-attribution card-text-small justify">
@@ -339,8 +343,8 @@ Mar 10, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U2hpbnklMkNMaWZlJTIwSW5zdXJhbmNlJTJDQWN0dWFyaWFsJTIwU2NpZW5jZQ==" data-listing-date-sort="1739746800000" data-listing-file-modified-sort="1743597034650" data-listing-date-modified-sort="1739746800000" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
-<a href="./projects/2021-08-29_Dashboard_Life_Insurances/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="U2hpbnklMkNMaWZlJTIwSW5zdXJhbmNlJTJDQWN0dWFyaWFsJTIwU2NpZW5jZQ==" data-listing-date-sort="1739746800000" data-listing-file-modified-sort="1793966192494" data-listing-date-modified-sort="1739746800000" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
+<a href="./projects/2021-08-29_Dashboard_Life_Insurances/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2021-08-29_Dashboard_Life_Insurances/panel.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -358,7 +362,7 @@ Life Insurance Dashboard
 <div class="listing-category" onclick="window.quartoListingCategory('QWN0dWFyaWFsJTIwU2NpZW5jZQ=='); return false;">Actuarial Science</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>A Shiny app for managing and visualizing a homogeneous life insurance portfolio.</p>
 </div>
 <div class="card-attribution card-text-small justify">
@@ -372,8 +376,8 @@ Feb 17, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="U0FTJTJDUmVwb3J0aW5nJTJDUENBJTJDQ2x1c3RlcmluZw==" data-listing-date-sort="1736463600000" data-listing-file-modified-sort="1742894675870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
-<a href="./projects/2025-01-10_Waste_Analysis_R_SAS/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="U0FTJTJDUmVwb3J0aW5nJTJDUENBJTJDQ2x1c3RlcmluZw==" data-listing-date-sort="1736463600000" data-listing-file-modified-sort="1793966192513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<a href="./projects/2025-01-10_Waste_Analysis_R_SAS/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2025-01-10_Waste_Analysis_R_SAS/copertina.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -393,7 +397,7 @@ Statistical Analysis of Urban Waste
 <div class="listing-category" onclick="window.quartoListingCategory('Q2x1c3RlcmluZw=='); return false;">Clustering</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>An in-depth statistical analysis of urban waste data across municipalities in Friuli-Venezia Giulia for a university exam project.</p>
 </div>
 <div class="card-attribution card-text-small justify">
@@ -407,8 +411,8 @@ Jan 10, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="QVBJJTJDUmVhbCUyMEVzdGF0ZSUyQ1IlMkNJZGVhbGlzdGElMkNMZWFmbGV0" data-listing-date-sort="1734390000000" data-listing-file-modified-sort="1742894675817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4089">
-<a href="./projects/2024-12-17_Idealista_API/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="QVBJJTJDUmVhbCUyMEVzdGF0ZSUyQ1IlMkNJZGVhbGlzdGElMkNMZWFmbGV0" data-listing-date-sort="1734390000000" data-listing-file-modified-sort="1793966192496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4089">
+<a href="./projects/2024-12-17_Idealista_API/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2024-12-17_Idealista_API/logo_Idealista_API_2.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -430,7 +434,7 @@ Idealista: housing sale in Trieste
 <div class="listing-category" onclick="window.quartoListingCategory('TGVhZmxldA=='); return false;">Leaflet</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 The aim of this project is to download all the ads of houses for sale in Trieste from the Idealista website and conduct a preliminary analysis of the data. Moreover, we will…
 </div>
 <div class="card-attribution card-text-small justify">
@@ -444,13 +448,13 @@ Dec 17, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="RmluYW5jZSUyQ1RpbWUlMjBTZXJpZXMlMkNDb21wZXRpdGlvbiUyQ09wdGltaXphdGlvbg==" data-listing-date-sort="1697320800000" data-listing-file-modified-sort="1759585695656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4716">
-<a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-categories="RmluYW5jZSUyQ1RpbWUlMjBTZXJpZXMlMkNDb21wZXRpdGlvbiUyQ09wdGltaXphdGlvbg==" data-listing-date-sort="1697320800000" data-listing-file-modified-sort="1793966192496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4717">
+<a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="./projects/2023-10-15_MIPC_Asset_Allocator/logo_MIPC_Asset_Allocator.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
-</a><div class="card-body post-contents"><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
+<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 McGill International Portfolio Challenge
 </h5>
@@ -465,8 +469,8 @@ McGill International Portfolio Challenge
 <div class="listing-category" onclick="window.quartoListingCategory('T3B0aW1pemF0aW9u'); return false;">Optimization</div>
 
 </div>
-</a><div class="card-text listing-description delink"><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link">
-</a><p><a href="./projects/2023-10-15_MIPC_Asset_Allocator/index.html" class="quarto-grid-link"></a><a href="https://www.mcgill.ca/desautels/initiatives-institutes/sustainable-growth-initiative-sgi/mcgill-international-portfolio-challenge">International competition</a> for the best…</p>
+<div class="card-text listing-description">
+<p><span>International competition</span> for the best…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -477,7 +481,7 @@ Oct 15, 2023
 </div>
 </div>
 </div>
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
@@ -533,13 +537,14 @@ Oct 15, 2023
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -559,7 +564,8 @@ Oct 15, 2023
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -568,8 +574,69 @@ Oct 15, 2023
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -583,6 +650,7 @@ Oct 15, 2023
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -745,44 +813,54 @@ Oct 15, 2023
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -880,6 +958,9 @@ Oct 15, 2023
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">

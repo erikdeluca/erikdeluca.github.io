@@ -17,7 +17,7 @@ about:
       target: _blank
     - text: Email
       icon: envelope
-      href: mailto:erik4399@gmail.com
+      href: mailto:info@de-luca.it
       target: _blank
     # - text: Resume
     #   icon: file-pdf
@@ -25,4 +25,9 @@ about:
     #   target: _blank
 ---
 
-Hello! I’m Erik De Luca, an actuary and biostatistician with a passion for data science, dedicated to transforming complex numbers and data into comprehensible stories and practical solutions. With a strong background in statistics {{< fa chart-line >}} and actuarial techniques, I have a keen interest in quantitative finance {{< fa money-bill-wave >}}, portfolio optimization {{< fa chart-pie >}}, and public health analytics {{< fa heartbeat >}}. When not immersed in numbers, I indulge in travel {{< fa plane >}}, craft beer brewing {{< fa beer >}}, and judo {{< fa user-ninja >}}. Welcome to my corner of the web!
+Hello! I'm Erik De Luca, a freelance biostatistician and actuary.
+I specialize in extracting strategic insights from complex data, providing clients with deep statistical modeling and comprehensive analytical reports.
+But I don't stop at the analysis. With a strong passion for IT, I love automating workflows into robust data pipelines, reducing human error and improving delivery speed.
+Using tools like Python, R, SQL, and Docker, I deploy scalable architectures both on-premise and in the cloud.
+By integrating strict software engineering practices, such as Git versioning and automated testing, I ensure every analytical solution is secure and highly reliable.
+Welcome to my portfolio!
